@@ -384,3 +384,19 @@ textarea { resize: vertical; }
   font-weight: 600;
   white-space: nowrap; /* 🔥 BU ÇOK KRİTİK */
 }
+.fade-in {
+  opacity: 0;
+  transform: translateY(12px);
+  animation: fadeUp 0.9s ease forwards;
+}
+
+.fade-in-delay {
+  animation-delay: 0.25s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
