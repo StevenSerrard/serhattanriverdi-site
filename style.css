@@ -315,3 +315,14 @@ textarea { resize: vertical; }
 .kvkk-check span {
   display: block;
 }
+.quote-line {
+  margin-top: 24px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 20px;
+  font-style: italic;
+  color: var(--text);
+  line-height: 1.7;
+  opacity: 0.85;
+  border-left: 2px solid var(--accent);
+  padding-left: 14px;
+}
