@@ -296,7 +296,7 @@ textarea { resize: vertical; }
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  margin: 6px 0 18px;
+  margin: 14px 0 18px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   font-weight: 400;
@@ -305,7 +305,13 @@ textarea { resize: vertical; }
 }
 
 .kvkk-check input {
-  width: auto;
+  width: 14px;
+  height: 14px;
   margin-top: 3px;
+  flex-shrink: 0;
   accent-color: var(--accent);
+}
+
+.kvkk-check span {
+  display: block;
 }
