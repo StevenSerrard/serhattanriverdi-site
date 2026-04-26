@@ -532,3 +532,74 @@ textarea { resize: vertical; }
     transform: translateY(0);
   }
 }
+/* =========================
+   HYT MENU - ACTIVE STATE
+========================= */
+.hyt-tab {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 14px 16px;
+  margin-bottom: 8px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.25s ease;
+  border-left: 2px solid transparent;
+}
+
+.hyt-tab:hover {
+  background: rgba(0,0,0,0.04);
+}
+
+.hyt-tab.active {
+  border-left: 3px solid #2e2e2e;
+  background: rgba(0,0,0,0.06);
+  font-weight: 600;
+}
+
+/* =========================
+   CONTENT ANIMATION
+========================= */
+.hyt-content {
+  transition: all 0.35s ease;
+}
+
+.fade-content {
+  animation: fadeSlide 0.45s ease;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   READABILITY UPGRADE
+========================= */
+.hyt-content {
+  max-width: 720px;
+}
+
+.hyt-content p {
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.hyt-content h2 {
+  margin-top: 18px;
+  margin-bottom: 10px;
+}
+
+.hyt-content h3 {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
