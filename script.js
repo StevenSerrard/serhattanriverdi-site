@@ -34,12 +34,19 @@ const hytContent = document.querySelector('#hyt-content');
 
 const hytTexts = {
   "hyt-nedir": {
-    title: "H.Y.T®; HipnoMeditatif Yeniden İşleme Terapisi",
-    text: `
-      <p>HipnoMeditatif Yeniden İşlemleme Terapisi (H.Y.T), geçmiş yaşantıların bugünkü duygusal ve zihinsel etkilerini ele alan yeniden işlemleme temelli bir terapi yaklaşımıdır.</p>
-      <p>Bu yaklaşımda amaç, kişinin zorlayıcı deneyimlerini daha bütünlüklü biçimde ele alabilmesi ve bu deneyimlerin bugünkü yaşamındaki etkilerini anlamlandırabilmesidir.</p>
-    `
-  },
+  title: "H.Y.T®; HipnoMeditatif Yeniden İşleme Terapisi",
+  text: `
+    <p>HipnoMeditatif Yeniden İşleme Terapisi, kısa adıyla H.Y.T®, Dr. Haluk Alan tarafından geliştirilen, asimilatif ve bütüncül bir terapi tekniğidir. İlk olarak “Hipnotik Yeniden İşleme Terapisi” adıyla tanıtılan bu yaklaşım, zaman içinde kuramsal ve uygulamaya dönük gelişmeler doğrultusunda “HipnoMeditatif Yeniden İşleme Terapisi” olarak adlandırılmıştır.</p>
+
+    <p>H.Y.T®, bilinç ve bilinçdışı süreçleri birlikte ele alan; hipnomeditatif, imgesel ve çift yönlü uyarım temelli teknikleri bütüncül bir yapı içinde kullanan entegratif bir yaklaşımdır. Bu yönüyle yalnızca geçmiş yaşantılarla değil, bu yaşantıların bugünkü etkileri ve geleceğe yönelik olumsuz beklentilerle de çalışmayı amaçlar.</p>
+
+    <p>Bu yaklaşımda geçmiş, şimdi ve gelecek zamansal bir bütünlük içinde ele alınır. Geçmiş deneyimlerin bugünkü tetikleyicileri, bedensel ve duygusal etkileri ya da geleceğe dair olumsuz yaşam algıları terapi sürecinin parçası olabilir. Bu nedenle H.Y.T®, yalnızca anıların yeniden ele alınmasıyla sınırlı kalmaz; kişinin deneyimini daha geniş bir zaman çizgisi içinde değerlendirmeye çalışır.</p>
+
+    <p>H.Y.T® danışan merkezli bir tekniktir. Çalışılacak konu, danışanın yaşadığı deneyimin onda bıraktığı etki üzerinden belirlenir. Terapi sürecinde danışanın hedefleri, motivasyonu ve sürece katılımı önemli bir yer tutar. Bu nedenle yaklaşım, “sorun kimdeyse çözüm de oradadır” anlayışıyla danışanın aktif katılımını merkeze alır.</p>
+
+    <p>H.Y.T® üzerine akademik çalışmalar yapılmış ve farklı lisansüstü araştırmalara konu olmuştur. Klinik uygulamalar ve ilk bilimsel veriler, bu yöntemin özellikle yeniden işlemleme temelli terapi yaklaşımları içinde dikkat çeken bir konuma sahip olduğunu göstermektedir.</p>
+  `
+}
   "hyt-kullanim": {
     title: "HYT nerelerde kullanılabilir?",
     text: `
