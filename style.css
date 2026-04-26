@@ -659,3 +659,42 @@ textarea { resize: vertical; }
 .hyt-content p + h2 {
   margin-top: 34px;
 }
+/* =========================
+   TEXT PROFESSIONAL UPGRADE
+========================= */
+
+.hyt-content {
+  font-size: 16px;
+  color: #2e2e2e;
+}
+
+.hyt-content p {
+  line-height: 1.75;
+  color: #444;
+}
+
+/* Önemli cümle vurgusu */
+.hyt-content p strong {
+  color: #000;
+  font-weight: 600;
+}
+
+/* Uzun metinlerde blok hissi */
+.hyt-content p {
+  max-width: 700px;
+}
+
+/* Bölüm ayrımı hissi */
+.hyt-content p + p {
+  margin-top: 10px;
+}
+
+/* Liste görünümü için (kullanırsan) */
+.hyt-content ul {
+  padding-left: 18px;
+  margin-top: 12px;
+}
+
+.hyt-content li {
+  margin-bottom: 6px;
+}
