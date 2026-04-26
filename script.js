@@ -16,7 +16,6 @@ if (toggle && nav) {
   });
 }
 
-
 /* =========================
    SCROLL REVEAL
 ========================= */
@@ -36,7 +35,6 @@ if (revealElements.length > 0) {
   revealElements.forEach((el) => revealObserver.observe(el));
 }
 
-
 /* =========================
    HYT TAB SYSTEM
 ========================= */
@@ -44,8 +42,30 @@ const hytTabs = document.querySelectorAll('.hyt-tab');
 const hytContent = document.querySelector('#hyt-content');
 
 const hytTexts = {
+  "hyt-nedir": {
+    title: "H.Y.T®; HipnoMeditatif Yeniden İşleme Terapisi",
+    text: `
+      <p>HYT bundan yaklaşık 7 yıl önce “Hipnotik Yeniden İşleme Terapisi” adı altında terapi dünyasına tanıtılmıştı. Ancak zamanla hem içeriğindeki kimi değişiklikler, hem de SEPİ gibi bazı uluslararası kongre ve özel görüşmelerde otörlerden alınan geri bildirimlere bağlı olarak bundan böyle “HipnoMeditatif (Holistik) Yeniden İşleme Terapisi, HYT” olarak isimlendirilmesine karar verilmiştir.</p>
 
-  "hyt-nedir": null, // HTML'den gelsin
+      <h2>Tanım</h2>
+
+      <p>HipnoMeditatif Yeniden İşleme Terapisi, HYT; Dr. Haluk ALAN tarafından geliştirilen asimilatif, bütüncül bir terapi tekniğidir.</p>
+
+      <p>HYT, bilinç ile bilinçdışını beraberce işleme sürecine dahil eden ve çift yönlü uyarımlarla bazı hipnotik (meditatif, imgesel) tekniklerden oluşan entegratif bir yaklaşımdır. Bu uygulamada hipnotik bazı teknikler eşliğinde çift yönlü uyarımlarla ilgili problem üzerinde desensitizasyon elde edilmektedir.</p>
+
+      <p>Bu modelde, çift yönlü uyarımlarla hipnomeditatif tekniklerin “birlikte” kullanımından daha çok, asimilatif mantıkla her ikisinin homojen entegratif bir uygulaması söz konusudur. Beraberce kullanıma yönelik daha önceleri birtakım çalışmalar yapılmış ama konunun uzmanları tarafından farklı yaklaşımlarla değerlendirilmiştir (American Journal of Clinical Hypnosis 43:3,4 January/April 2001). HYT içindeki hipnoz ve çift yönlü uyarımların entegratif düzenlemesi, “birlikte kullanım” olmadıkları için, daha önceki bu uygulamalarla (2001) karıştırılmamalı ve aynı kategoride değerlendirilmemelidir.</p>
+
+      <p>HYT, geçmiş, şimdi ve geleceği zamansal bir bütünlük içinde beraberce ele alan ve işleyen bir tekniktir. Bu yüzden sadece anılarla sınırlı kalmaz, geleceğe yönelik bireyin imge dünyasında yer alan gelecek yönelimli olası olumsuz yaşam algıları üzerinde de etkin bir şekilde çalışır. Geçmiş anıların şimdiki zaman diliminde tetikleyicileri olabilir. Güncel yaşam aktiviteleri nedeniyle ortaya çıkan duygusal ve duyumsal etkilenmeler geçmişi bugün gibi yaşantılamaya neden olabilir. Bu gibi durumlarda güncel tetikleyicilere yer verilir. Güncel tetikleyiciler hedefe doğru yol alan birey için önlerine çıkan çakıl taşları gibidir. Zamansal boyutta ele alındığında her üç zaman dilimine hitap etmesi nedeniyle HYT, zamanlar üstü bir teknik olarak kabul edilebilir.</p>
+
+      <p>HYT; danışan merkezli bir tekniktir. Yaşanan travmalar ve olumsuz yaşam deneyimlerinin bireyde bıraktığı etkiler bağlamında toptancı bir zihniyet ya da herhangi bir önyargıya varmadan tamamen danışan merkezli bir protokol çerçevesinde üzerinde çalışılacak olaya odaklanılır. Yaşanan deneyimin hastada bıraktığı etki ana çalışma konusudur. “Sorun kimdeyse çözüm de oradadır” prensibinden hareketle hedef olay çerçevesinde hazırlanan protokole uygun olarak çalışmaya başlanır. Sorunun tanınmasından tedavisine kadar her kademede danışan sürece dahil edilir. Olayın kahramanına rağmen tedaviden herhangi bir sonuç alınamayacağı kabul edilir. Bu yüzden danışan terapi sürecinin en önemli temel unsurudur. Terapinin henüz başında hastadan “terapi hedefleri” adı altında terapi sonunda varılmak istenen sonuca yönelik talep alınır. Danışanın terapiye olan motivasyonunu sağlayan bu yaklaşım terapiste de yol gösterici olur.</p>
+
+      <p>HYT, Üsküdar Üniversitesi Sağlık Bilimleri Enstitüsü, Nörobilim Ana Bilim Dalında Prof. Dr. Sinan Canan Hocanın moderatörlüğünde Yüksek Lisans tezi olarak kabul edilmiştir. İlk bilimsel çalışmanın sonuçları HYT’nin etkili olduğu yönündedir.</p>
+
+      <p>HYT çeşitli üniversitelerde Yüksek Lisans ve Doktora çalışmalarında (Sağlık Bilimleri Üniversitesi Hamidiye Sağlık Bilimleri Enstitüsü GETAT Doktora tezi) tez konusu olarak kabul edilmekte ve bu yöndeki çalışmalar devam etmektedir.</p>
+
+      <p>Yüzlerce klinik uygulama ve söz konusu çalışmaların ilk verileri ışığında şunu söylemek mümkündür; HYT, hızlı sonuç alınması, kolay uygulanabilirliği ve diğer terapi türlerine kolay entegrasyonu nedeniyle dikkat çekmektedir.</p>
+    `
+  },
 
   "hyt-kullanim": {
     title: "HYT nerelerde kullanılabilir?",
@@ -90,29 +110,21 @@ const hytTexts = {
   }
 };
 
-
 /* =========================
-   TAB CLICK (PREMIUM)
+   TAB CLICK
 ========================= */
 if (hytTabs.length > 0 && hytContent) {
-
   hytTabs.forEach((tab) => {
     tab.addEventListener('click', () => {
-
-      /* ACTIVE BUTTON */
       hytTabs.forEach((item) => item.classList.remove('active'));
       tab.classList.add('active');
 
       const selected = hytTexts[tab.dataset.content];
-
-      /* HTML'deki içerik korunacak */
       if (!selected) return;
 
-      /* ANIMATION RESET */
       hytContent.classList.remove('fade-content');
       void hytContent.offsetWidth;
 
-      /* CONTENT UPDATE */
       hytContent.innerHTML = `
         <h1>${selected.title}</h1>
         ${selected.text}
@@ -120,13 +132,15 @@ if (hytTabs.length > 0 && hytContent) {
 
       hytContent.classList.add('fade-content');
 
-      /* SMOOTH SCROLL */
       hytContent.scrollIntoView({
         behavior: "smooth",
         block: "start"
       });
-
     });
   });
 
+  const defaultTab = document.querySelector('[data-content="hyt-nedir"]');
+  if (defaultTab) {
+    defaultTab.click();
+  }
 }
