@@ -603,3 +603,59 @@ textarea { resize: vertical; }
   margin-bottom: 8px;
   font-size: 16px;
 }
+/* =========================
+   HYT PREMIUM MICRO DESIGN
+========================= */
+
+.hyt-tab::before {
+  content: "•";
+  margin-right: 8px;
+  color: var(--accent);
+  opacity: 0.75;
+}
+
+.hyt-tab.active::before {
+  opacity: 1;
+}
+
+.hyt-content h1 {
+  position: relative;
+  padding-bottom: 18px;
+  margin-bottom: 26px;
+}
+
+.hyt-content h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 72px;
+  height: 2px;
+  background: var(--accent);
+  opacity: 0.75;
+}
+
+.hyt-content h2,
+.hyt-content h3 {
+  color: var(--text);
+}
+
+.hyt-content h2 {
+  margin-top: 34px;
+  padding-top: 8px;
+}
+
+.hyt-content h3 {
+  margin-top: 28px;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.hyt-content p {
+  margin-bottom: 18px;
+}
+
+.hyt-content p + h3,
+.hyt-content p + h2 {
+  margin-top: 34px;
+}
