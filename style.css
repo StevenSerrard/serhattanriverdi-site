@@ -410,3 +410,17 @@ textarea { resize: vertical; }
   opacity: 1;
   transform: translateY(0);
 }
+.service-link {
+  display: inline-flex;
+  margin-top: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 4px;
+}
+
+.service-link:hover {
+  opacity: 0.75;
+}
