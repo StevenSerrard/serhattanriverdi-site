@@ -502,3 +502,7 @@ textarea { resize: vertical; }
   background: var(--surface-soft);
   font-weight: 600;
 }
+.hyt-menu {
+  position: sticky;
+  top: 120px;
+}
