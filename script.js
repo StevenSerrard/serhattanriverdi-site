@@ -74,12 +74,17 @@ const hytTexts = {
   },
 
   "hipnoz-kullanilmaz": {
-    title: "Hipnoz hangi durumlarda kullanılmaz?",
-    text: `
-      <p>Hipnoz her birey ve her klinik durum için uygun olmayabilir. Uygulama öncesinde kişinin ruhsal durumu dikkatle değerlendirilmelidir.</p>
-    `
-  },
+  title: "Hipnoz hangi durumlarda kullanılmaz?",
+  text: `
+    <p><strong>Hipnoz hangi durumlarda kullanılmaz?</strong></p>
 
+    <p>Hipnoterapide yetkinlik önemli bir meseledir. Hipnozu biliyor olmak, yetki alanı dışındaki kişilere tedavi amacıyla müdahale etme hakkı vermez. Eğer hipnoterapistinizin Sağlık Bakanlığı onaylı bir yetkinliği yoksa, bu konuda dikkatli olmanız ve kendinizi o kişiye teslim etmemeniz önemlidir.</p>
+
+    <p>HYT, ZYT, MYT ve HBMT gibi yalnızca hipnotik tekniklerden oluşmayan uygulamalarda Sağlık Bakanlığı “Hipnoz Uygulama Sertifikası” zorunlu olmasa da, terapistin ilgili eğitimleri aldığına dair belge talep edilebilir.</p>
+
+    <p>Organik beyin sendromları, psikotik bozukluklara yatkınlık, bipolar bozukluk, paranoid özellikler, dissosiyatif bozukluklar ve borderline kişilik yapısı olan bireyler hipnoz açısından zayıf adaylar olabilir ya da özel dikkat gerektiren gruplar arasında yer alır (Brown & Fromm, 1986).</p>
+  `
+},
   "yanlis-bilinenler": {
     title: "Hipnozla ilgili yanlış bildiklerimiz",
     text: `
