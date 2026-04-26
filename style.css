@@ -478,13 +478,13 @@ textarea { resize: vertical; }
 }
 
 .fade-content {
-  animation: fadeContent 0.45s ease;
+  animation: fadeContent 0.6s ease;
 }
 
 @keyframes fadeContent {
   from {
     opacity: 0;
-    transform: translateY(8px);
+    transform: translateY(12px);
   }
   to {
     opacity: 1;
