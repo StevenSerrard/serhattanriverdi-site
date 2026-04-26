@@ -86,12 +86,42 @@ const hytTexts = {
   `
 },
   "yanlis-bilinenler": {
-    title: "Hipnozla ilgili yanlış bildiklerimiz",
-    text: `
-      <p>Hipnoz, kişinin kontrolünü kaybettiği bir durum değildir. Terapötik bağlamda dikkat ve içsel odaklanmayı artıran bir yöntemdir.</p>
-    `
-  }
-};
+  title: "Hipnozla ilgili yanlış bildiklerimiz",
+  text: `
+    <p><strong>Hipnozla ilgili yanlış bildiklerimiz</strong></p>
+
+    <p>Mitler hipnoz dünyasının karabulutlarıdır. Sırf yanlış bilinenler yüzünden birçok kişi bu önemli terapötik teknikten yararlanamamaktadır. Bu konuda terapistlere önemli görevler düşmektedir. Uzun yıllar boş bırakılan bu alanda, çoğu zaman alan dışı kişilerin söylemleri etkili olmuştur. Bu nedenle doğru bilginin açık biçimde paylaşılması büyük önem taşır.</p>
+
+    <p>Hipnoz hakkında bilgi sahibi olduğunu düşünen birçok kişinin aslında eksik ya da hatalı bilgilere sahip olduğu görülmektedir. Köstekli saat, uyutma ya da kontrol kaybı gibi imgeler klinik hipnozla ilişkili değildir. Bu nedenle doğru bilgilendirme sürecin önemli bir parçasıdır.</p>
+
+    <h3>Ya uyanamazsam?</h3>
+    <p>Hipnoz bir uyku hali değildir. Kişi süreç boyunca olan bitenin farkındadır. İstediği zaman bu durumdan çıkabilir. Hipnoterapist bu süreci kolaylaştıran bir rehberdir.</p>
+
+    <h3>Hipnoz altındayken tüm sırlarımı açık eder miyim?</h3>
+    <p>Kişi istemediği hiçbir bilgiyi paylaşmaz. Hipnoz altında da kontrol bireydedir. Etik bir terapötik ortamda, kişi yalnızca paylaşmak istediği kadarını ifade eder.</p>
+
+    <h3>Terapist zihnimi kontrol edebilir mi?</h3>
+    <p>Telkine açık olmak, telkini kabul etmek anlamına gelmez. Kişi kendi değerleriyle uyumlu olmayan hiçbir telkini kabul etmez. Hipnoterapide amaç kontrol değil, içsel süreçlere ulaşmaktır.</p>
+
+    <h3>Hipnoz terapistin gücüne mi bağlıdır?</h3>
+    <p>Hipnoz, terapist ve danışanın birlikte yürüttüğü bir süreçtir. Kişinin katılımı ve isteği olmadan gerçekleşmez. Terapistin “özel bir gücü” olduğu düşüncesi doğru değildir.</p>
+
+    <h3>Hipnoza girmek zayıflık mıdır?</h3>
+    <p>Aksine, odaklanabilen, hayal gücü gelişmiş ve içsel süreçlerine temas edebilen bireyler hipnoza daha yatkındır. Bu bir zayıflık değil, bir kapasitedir.</p>
+
+    <h3>Hipnoz tehlikeli midir?</h3>
+    <p>Hipnoz kendi başına tehlikeli değildir. Ancak yetkin olmayan kişiler tarafından uygulanması risk oluşturabilir. Bu nedenle uzman ve yetkili kişilerle çalışmak önemlidir.</p>
+
+    <h3>Hipnoz bağımlılık yapar mı?</h3>
+    <p>Hipnoz bağımlılık oluşturmaz. Aksine otohipnoz yoluyla kişinin kendi kendine düzenleme kapasitesini artırır ve bağımsızlığını destekler.</p>
+
+    <h3>Hipnoz bir terapi yöntemi midir?</h3>
+    <p>Hipnoz tek başına bir terapi yöntemi değil, terapilere yardımcı bir uygulamadır. Yapılan çalışmalar, hipnozla desteklenen terapilerin daha etkili olabileceğini göstermektedir.</p>
+
+    <h3>Hipnozda mutlaka gevşemeli miyim?</h3>
+    <p>Gevşeme sıklıkla görülse de zorunlu değildir. Kişi deneyimi kendi içsel süreci doğrultusunda yaşar. Önemli olan deneyimin nasıl olduğu değil, nasıl deneyimlendiğidir.</p>
+  `
+},
 
 if (hytTabs.length > 0 && hytContent) {
   hytTabs.forEach((tab) => {
