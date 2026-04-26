@@ -55,12 +55,15 @@ const hytTexts = {
   },
 
   "hyt-kullanim": {
-    title: "HYT nerelerde kullanılabilir?",
-    text: `
-      <p>H.Y.T; geçmiş yaşantıların etkisinin sürdüğü, yoğun duygusal tepkilerin ortaya çıktığı ya da kişinin bazı deneyimleri anlamlandırmakta zorlandığı durumlarda kullanılabilir.</p>
-      <p>Kaygı, travmatik yaşantılar, bedensel gerginlikler, yoğun stres tepkileri, tekrar eden duygusal zorlanmalar ve geçmiş deneyimlerin bugünkü ilişkiler üzerindeki etkileri bu çalışma alanı içinde ele alınabilir.</p>
-    `
-  },
+  title: "HYT nerelerde kullanılabilir?",
+  text: `
+    <p>H.Y.T®, içinde barındırdığı temel tekniklerin kullanım alanları doğrultusunda farklı psikolojik ve bedensel yakınmalarda destekleyici bir terapi yaklaşımı olarak kullanılabilir.</p>
+
+    <p>Panik bozukluğu, kaygı bozuklukları, obsesif kompulsif bozukluk, depresyon, komplike yas, rahatsız edici anılar, olumsuz yaşam deneyimleri, fobiler ve özgül fobiler bu çalışma alanları arasında yer alabilir.</p>
+
+    <p>Ayrıca ağrı rahatsızlıkları, yeme bozuklukları, performans kaygısı, stres yönetimi, bağımlılıklar, cinsel ve/veya fiziksel taciz, tecavüz, beden algısı bozuklukları, cinsel işlev bozuklukları, davranım bozuklukları, özgüven sorunları, migren, fibromiyalji, fantom ağrısı, kompleks ve basit travma ile travma sonrası stres bozukluğu gibi alanlarda da kullanılabilmektedir.</p>
+  `
+},
 
   "hyt-teori": {
     title: "HYT’nin teorik arka planı",
