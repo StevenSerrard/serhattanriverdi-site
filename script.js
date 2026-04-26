@@ -50,7 +50,7 @@ const hytTexts = {
   "hyt-kullanim": {
     title: "HYT nerelerde kullanılabilir?",
     text: `
-      <p>HYT içinde barındırdığı iki temel tekniğin kullanıldığı sorunlarda doğal olarak kullanılabilir.</p>
+      <p><strong>HYT içinde barındırdığı iki temel tekniğin kullanıldığı sorunlarda doğal olarak kullanılabilir.</strong></p>
 
       <p>Panik Bozukluğu, Kaygı Bozuklukları, OKB, Depresyon, Komplike Yas, Rahatsız Edici Anılar, olumsuz yaşam deneyimleri, Fobiler, Özgül fobiler, Ağrı Rahatsızlıkları, Yeme Bozuklukları, Performans Kaygısı, Stres Yönetimi, Bağımlılıklar, Cinsel ve/veya Fiziksel Taciz, Tecavüz, Beden Algısı Bozuklukları, Cinsel İşlev Bozuklukları, Davranım Bozuklukları, Özgüven Sorunları, Migren, Fibromiyalji ve Fantom Ağrısı, Kompleks ve basit travma ve Travma sonrası stres bozukluğu gibi alanlarda kullanılabilmektedir.</p>
     `
@@ -72,7 +72,7 @@ const hytTexts = {
   "hipnoz-kullanilmaz": {
     title: "Hipnoz hangi durumlarda kullanılmaz?",
     text: `
-      <p>Hipnoterapide yetkinlik önemli bir meseledir. Eğer hipnoterapistinizin Sağlık Bakanlığı onaylı sertifikası yoksa lütfen o kişiye güvenmeyin.</p>
+      <p><strong>Hipnoterapide yetkinlik önemli bir meseledir. Eğer hipnoterapistinizin Sağlık Bakanlığı onaylı sertifikası yoksa lütfen o kişiye güvenmeyin.</strong></p>
 
       <p>Organik beyin sendromları, psikotik durumlar, bipolar bozukluk, dissosiyatif bozukluk ve borderline yapı gibi durumlarda dikkat gereklidir.</p>
     `
@@ -81,7 +81,7 @@ const hytTexts = {
   "yanlis-bilinenler": {
     title: "Hipnozla ilgili yanlış bildiklerimiz",
     text: `
-      <p>Mitler hipnoz dünyasının karabulutlarıdır. Sırf yanlış bilinenler yüzünden birçok hasta bu teknikten yararlanamamaktadır.</p>
+      <p><strong>Mitler hipnoz dünyasının karabulutlarıdır. Sırf yanlış bilinenler yüzünden birçok hasta bu teknikten yararlanamamaktadır.</strong></p>
 
       <p>Hipnoz kontrol kaybı değildir. Kişi süreç boyunca bilinçlidir.</p>
 
