@@ -497,3 +497,8 @@ textarea { resize: vertical; }
     grid-template-columns: 1fr;
   }
 }
+.hyt-tab.active {
+  border-color: var(--accent);
+  background: var(--surface-soft);
+  font-weight: 600;
+}
