@@ -53,11 +53,27 @@ const hytTexts = {
   },
 
   "hyt-teori": {
-    title: "HYT’nin teorik arka planı",
-    text: `
-      <p>H.Y.T’nin teorik arka planı; hipnoz, meditasyon, yeniden işlemleme ve zihinsel-duygusal deneyimlerin bütünleştirilmesi ekseninde ele alınır.</p>
-    `
-  },
+  title: "HYT’nin teorik arka planı",
+  text: `
+    <p><strong>HYT’nin Teorik Arka Planı</strong></p>
+
+    <p>HYT’nin teorik alt yapısı, iki bilgi işleme modeli ve sahne yapım teorisi (Scene Construction Theory) üzerinde şekillenmektedir. Bilgi işleme modellerinden biri, Çift Yönlü Uyarımları (ÇYU) terapi dünyasına kazandıran Shapiro’nun Adaptif Bilgi İşleme Modeli (Shapiro, 2001), diğeri ise Tahmine Dayalı İşleme Modeli’dir (Friston ve ark., 2006; Clark, 2013; Hohwy, 2013; Chamberlin, 2019).</p>
+
+    <p>Beyinde doğuştan var olan bir bilgi işleme sisteminin varlığı göz önüne alındığında, olumsuz yaşam deneyimleri ya da travmaların bu sistemin biyokimyasal dengesini bozmuş olabileceği düşünülmektedir. Bu dengesizlik, bilgi işleme sürecinin tamamlanmasını engelleyebilir. Travmatik süreçler, uyum mekanizmalarının bozulmasına yol açabilir ve bilgi işlemeyi durdurarak bilgiyi anksiyete oluşturan orijinal haliyle “donmuş” şekilde tutabilir (Shapiro, 2016).</p>
+
+    <p>Travmatik olaylar ya da olumsuz yaşam deneyimleri bilgi işleme sisteminde tıkanmaya yol açtığında, yeniden işlemleme gereksinimi ortaya çıkar. Bu süreç yeniden yapılandırılmadığında, deneyim ego-distonik biçimde kalabilir. Amaç, bu sürecin egoya uyumlu hale getirilmesidir. Alladin (2013) bu durumu şu şekilde ifade eder: “Gevşeme ve rahatlama yeterli değildir; tedavinin önemli parçası travmatik anının yeniden işlenmesidir.”</p>
+
+    <p>Hipnoz durumunda, hafıza işleme süreçlerinin etkinliğinin arttığı varsayımıyla birlikte, geri çağrılan anıların temsili imgelerle ifade edilmesinin hipokampal ağ aktivitesi üzerinde etkili olduğu düşünülmektedir. HYT uygulamasında, hem sığınak çalışmasında hem de travmatik anının yeniden işlenmesi sürecinde sembol ve imgesel temsiller kullanılır.</p>
+
+    <p>Sağ ve sol taraftaki pozitif bilişle bağlantılı temsili görsellerin, tahmin hatasını azaltma sürecinde belleğin referans noktaları gibi işlev gördüğü ve yeniden işlemlemeyi kolaylaştırdığı düşünülmektedir. Bu yaklaşımın, terapi sürecinde daha hızlı ve kalıcı dönüşümlerle ilişkili olabileceği kabul edilmektedir.</p>
+
+    <p>HYT, sığınak çalışmasından seansın sonlandırılmasına kadar tüm aşamalarında Porges’in (2009) Polivagal Teorisi ile uyumlu bir çerçeve sunar. Özellikle travma ve yoğun kaygı durumlarında, danışanın güvenli bir fizyolojik ve duygusal ortamda sürece dahil edilmesi büyük önem taşır.</p>
+
+    <p>Göz hareketleri ve çift yönlü uyarımın hipnozla birlikte kullanılmasının ventral vagal sistemi aktive ederek sempatik sinir sistemini inhibe ettiği ve parasempatik sistemi devreye soktuğu düşünülmektedir (Masson, 2016). Bu durum, güvenlik hissinin oluşmasını ve yeniden işlemleme sürecinin daha sağlıklı ilerlemesini destekleyebilir.</p>
+
+    <p>Güvenli fizyolojik koşullar altında, hipokampüs merkezli bilgi işleme süreçlerinin daha geniş bir hafıza taraması ve yeniden yapılandırma gerçekleştirdiği, bunun da yeni öğrenmelerin önünü açtığı düşünülmektedir (Chadwick, Mullally & Maguire, 2012; Chamberlin, 2019; Baror & Bar, 2016; Hassabis & Maguire, 2009).</p>
+  `
+},
 
   "hipnoz-kullanilmaz": {
     title: "Hipnoz hangi durumlarda kullanılmaz?",
