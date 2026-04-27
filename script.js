@@ -98,6 +98,13 @@ hyttr.com
       <p><strong>HYT içinde barındırdığı iki temel tekniğin kullanıldığı sorunlarda doğal olarak kullanılabilir.</strong></p>
 
       <p>Panik Bozukluğu, Kaygı Bozuklukları, OKB, Depresyon, Komplike Yas, Rahatsız Edici Anılar, olumsuz yaşam deneyimleri, Fobiler, Özgül fobiler, Ağrı Rahatsızlıkları, Yeme Bozuklukları, Performans Kaygısı, Stres Yönetimi, Bağımlılıklar, Cinsel ve/veya Fiziksel Taciz, Tecavüz, Beden Algısı Bozuklukları, Cinsel İşlev Bozuklukları, Davranım Bozuklukları, Özgüven Sorunları, Migren, Fibromiyalji ve Fantom Ağrısı, Kompleks ve basit travma ve Travma sonrası stres bozukluğu gibi alanlarda kullanılabilmektedir.</p>
+    <p>
+Bu içerik, ilgili literatür ve uygulama kaynaklarından derlenmiştir. 
+Detaylı bilgi için: 
+<a href="https://hyttr.com/hizmetler/hipnozla-ilgili-yanlis-bildiklerimiz" target="_blank">
+hyttr.com
+</a>
+</p>
     `
   },
 
