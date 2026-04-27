@@ -911,3 +911,11 @@ textarea {
 .hyt-content p {
   margin-bottom: 0;
 }
+.hyt-content a {
+  color: var(--accent);
+  border-bottom: 1px solid var(--accent);
+}
+
+.hyt-content a:hover {
+  opacity: 0.7;
+}
