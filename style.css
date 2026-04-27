@@ -796,3 +796,118 @@ textarea {
 .hyt-content h3 {
   max-width: 720px;
 }
+/* =========================
+   HYT READING EXPERIENCE (BOOK STYLE)
+========================= */
+
+.hyt-content {
+  max-width: 720px;
+}
+
+/* PARAGRAF */
+.hyt-content p {
+  font-size: 18px;
+  line-height: 2;              /* daha nefesli */
+  color: #3e3e3e;
+  text-align: justify;
+  hyphens: auto;
+  margin-bottom: 20px;
+}
+
+/* PARAGRAF AKIŞ RİTMİ */
+.hyt-content p + p {
+  margin-top: 12px;
+}
+
+/* İLK PARAGRAF (başlık sonrası) */
+.hyt-content h1 + p {
+  margin-top: 22px;
+}
+
+/* VURGU (strong) */
+.hyt-content p strong {
+  font-weight: 600;
+  color: #000;
+  letter-spacing: 0.2px;
+}
+
+/* BAŞLIK */
+.hyt-content h1 {
+  font-size: clamp(34px, 4vw, 48px);
+  line-height: 1.2;
+  margin-bottom: 28px;
+  padding-bottom: 16px;
+  position: relative;
+}
+
+/* BAŞLIK ÇİZGİ */
+.hyt-content h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 80px;
+  height: 2px;
+  background: #7d8ea3;
+  opacity: 0.7;
+}
+
+/* ALT BAŞLIK */
+.hyt-content h2 {
+  margin-top: 40px;
+  margin-bottom: 14px;
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+/* SORU BAŞLIKLARI */
+.hyt-content h3 {
+  margin-top: 34px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2a2a2a;
+}
+
+/* PARAGRAF + BAŞLIK GEÇİŞLERİ */
+.hyt-content p + h3,
+.hyt-content p + h2 {
+  margin-top: 36px;
+}
+
+/* OKUMA KONFORU */
+.hyt-content {
+  letter-spacing: 0.2px;
+  word-spacing: 0.5px;
+}
+
+/* MOBİL OPTİMİZASYON */
+@media (max-width: 768px) {
+  .hyt-content p {
+    font-size: 16px;
+    line-height: 1.85;
+  }
+}
+/* =========================
+   PARAGRAPH INDENT SYSTEM
+========================= */
+
+/* İlk paragraf hariç diğerleri girintili */
+.hyt-content p {
+  text-indent: 0;
+}
+
+.hyt-content p + p {
+  text-indent: 24px;   /* girinti */
+  margin-top: 6px;     /* boşluk azalır (kitap hissi) */
+}
+
+/* Başlıktan sonra gelen ilk paragraf girintisiz */
+.hyt-content h1 + p,
+.hyt-content h2 + p,
+.hyt-content h3 + p {
+  text-indent: 0;
+}
+.hyt-content p {
+  margin-bottom: 0;
+}
