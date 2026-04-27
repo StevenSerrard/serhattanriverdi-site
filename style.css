@@ -727,3 +727,72 @@ textarea {
     flex-direction: column;
   }
 }
+/* =========================
+   HYT TEXT PREMIUM FORMAT
+========================= */
+
+.hyt-content {
+  max-width: 760px;
+}
+
+/* Paragraf */
+.hyt-content p {
+  font-size: 18px;
+  line-height: 1.9;
+  color: #444;
+  text-align: justify;
+  hyphens: auto;
+  margin-bottom: 18px;
+}
+
+/* Paragraf arası boşluk (ritim) */
+.hyt-content p + p {
+  margin-top: 10px;
+}
+
+/* Vurgulu cümle */
+.hyt-content p strong {
+  font-weight: 600;
+  color: #000;
+}
+
+/* Başlık */
+.hyt-content h1 {
+  margin-bottom: 26px;
+  padding-bottom: 14px;
+  position: relative;
+}
+
+/* Başlık alt çizgi */
+.hyt-content h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 72px;
+  height: 2px;
+  background: #7d8ea3;
+  opacity: 0.8;
+}
+
+/* Alt başlık */
+.hyt-content h2 {
+  margin-top: 34px;
+  margin-bottom: 12px;
+}
+
+/* Soru başlıkları (en kritik) */
+.hyt-content h3 {
+  margin-top: 28px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2e2e2e;
+}
+
+/* Uzun metin daraltma (okunabilirlik) */
+.hyt-content p,
+.hyt-content h2,
+.hyt-content h3 {
+  max-width: 720px;
+}
