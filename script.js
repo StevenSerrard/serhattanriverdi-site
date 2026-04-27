@@ -79,26 +79,42 @@ const hytTexts = {
   "hyt-teori": {
   title: "HYT’nin teorik arka planı",
   text: `
-    <p><strong>HYT’nin Teorik arka planı</strong></p>
+    <p>
+    <strong>HYT’nin Teorik arka planı</strong>
+    </p>
 
-    <p>HYT’nin teorik alt yapısı, iki bilgi işleme modeli ve sahne yapım teorisi (Scene Contruction Theory) üzerinde şekillenmektedir. Bilgi işleme modellerinden biri Çift Yönlü Uyarımları (ÇYU) terapi dünyasına katarak muhteşem bir tekniği bize sunan Shapiro’nun Adaptif Bilgi İşleme Modeli (Shapiro, 2001), bir diğeri de “Tahmine Dayalı İşleme Modeli”dir (Friston ve ark. 2006; Clark, 2013; Hohwy, 2013; Chamberlin, 2019).</p>
+    <p>
+    HYT’nin teorik alt yapısı, iki bilgi işleme modeli ve sahne yapım teorisi (Scene Contruction Theory) üzerinde şekillenmektedir. Bilgi işleme modellerinden biri Çift Yönlü Uyarımları (ÇYU) terapi dünyasına katarak muhteşem bir tekniği bize sunan Shapiro’nun Adaptif Bilgi İşleme Modeli (Shapiro, 2001), bir diğeri de “Tahmine Dayalı İşleme Modeli”dir (Friston ve ark. 2006; Clark, 2013; Hohwy, 2013; Chamberlin, 2019).
+    </p>
 
-    <p>Beyinde doğuştan var olan bir bilgi işleme sisteminin varlığı göz önüne alındığında, Olumsuz yaşam deneyimleri ya da travmaların beynin fiziksel bilgi işleme sisteminin biyokimyasal dengesini bozmuş olabileceğini söylemek mümkündür. Bu dengesizlik bilgi işleme sürecinin bir çözüme ulaşmasını engelleyebilir. Travmatik süreçler; olağan uyum mekanizmalarının bozulmasına yol açar. Otörler; bu sürecin bilgi işlemeyi durduğunu ve bilgiyi anksiyete oluşturan orijinal haliyle dondurduğunu (DÜĞÜM) öne sürmektedir(Shapiro, 2016).</p>
+    <p>
+    Beyinde doğuştan var olan bir bilgi işleme sisteminin varlığı göz önüne alındığında, Olumsuz yaşam deneyimleri ya da travmaların beynin fiziksel bilgi işleme sisteminin biyokimyasal dengesini bozmuş olabileceğini söylemek mümkündür. Bu dengesizlik bilgi işleme sürecinin bir çözüme ulaşmasını engelleyebilir. Travmatik süreçler; olağan uyum mekanizmalarının bozulmasına yol açar. Otörler; bu sürecin bilgi işlemeyi durduğunu ve bilgiyi anksiyete oluşturan orijinal haliyle dondurduğunu (DÜĞÜM) öne sürmektedir(Shapiro, 2016).
+    </p>
 
-    <p>Travmatik olaylar ya da olumsuz yaşam deneyimleri, bilgi işleme sisteminde tıkanmaya yol açtığından artık orada yeni bir işlemlemeye gereksinim doğar. Yeniden işlemleme yapılmadığında süreç, ego-distonik haliyle kalır. Amaç, sürecin egoya uyumlu hale getirilmesidir. Bu konuda Alladin (2013) şöyle der; “ (Bu gibi durumlarda) …Gevşeme ve rahatlama yetmez, tedavinin önemli olan parçası; travmatik olan olayı (anıyı) yeniden işlemektir. Yeniden işlemleme yaptığınızda kaygı düzeyiniz azalıyor.”</p>
+    <p>
+    Travmatik olaylar ya da olumsuz yaşam deneyimleri, bilgi işleme sisteminde tıkanmaya yol açtığından artık orada yeni bir işlemlemeye gereksinim doğar. Yeniden işlemleme yapılmadığında süreç, ego-distonik haliyle kalır. Amaç, sürecin egoya uyumlu hale getirilmesidir. Bu konuda Alladin (2013) şöyle der; “ (Bu gibi durumlarda) …Gevşeme ve rahatlama yetmez, tedavinin önemli olan parçası; travmatik olan olayı (anıyı) yeniden işlemektir. Yeniden işlemleme yaptığınızda kaygı düzeyiniz azalıyor.”
+    </p>
 
-    <p>Hipnoz durumunda kişinin hafıza işleme yeteneklerinin arttığı varsayımıyla birlikte hafızadan geri çağrılan anıların, temsili görseller ile ifade edilmesinin hipokampal alanlardaki nöronal ağ aktivitesinde etkinlik gösterdiği düşünülmektedir. HYT uygulamasının hem sığınak çalışmasında hem de travmatik anıyı yeniden işleme sürecinde (V döngüsü) simge ve semboller kullanılır. Sağ ve sol taraftaki pozitif bilişle bağlantılı temsili görsellerin, tahmin hatasını en aza indirme görevinde adeta belleğin referans noktaları gibi görev aldığı ve bunların yeniden işlemleme sürecini kolaylaştırıcı bir etki yarattığı düşünülmektedir. Tost tekniği mantığından hareketle terapi sonucunda hızlı ve kalıcı değişim ve dönüşümün bu sayede sağlandığı kabul edilmektedir.</p>
+    <p>
+    Hipnoz durumunda kişinin hafıza işleme yeteneklerinin arttığı varsayımıyla birlikte hafızadan geri çağrılan anıların, temsili görseller ile ifade edilmesinin hipokampal alanlardaki nöronal ağ aktivitesinde etkinlik gösterdiği düşünülmektedir. HYT uygulamasının hem sığınak çalışmasında hem de travmatik anıyı yeniden işleme sürecinde (V döngüsü) simge ve semboller kullanılır. Sağ ve sol taraftaki pozitif bilişle bağlantılı temsili görsellerin, tahmin hatasını en aza indirme görevinde adeta belleğin referans noktaları gibi görev aldığı ve bunların yeniden işlemleme sürecini kolaylaştırıcı bir etki yarattığı düşünülmektedir. Tost tekniği mantığından hareketle terapi sonucunda hızlı ve kalıcı değişim ve dönüşümün bu sayede sağlandığı kabul edilmektedir.
+    </p>
 
-    <p>HYT, sığınak çalışmasından başlayarak seansın sonlandırılmasına kadar her aşamasında Porges’in (2009) Polivagal Teorisine uyumlu bir çalışma modeli sunmaktadır. Özellikle travma tedavilerinde ve anksiyöz durumlarda danışanların güvenli bir ortamda terapiye alınmaları hem teşhis (anı ya da imgeye ulaşmak) hem de tedavi (yeniden işlemleme) bakımından oldukça önemlidir. Masson (2016)’ya göre; Göz hareketleri ve çift yönlü uyarımın hipnozla birlikte kullanılmasının ventral vagal sistemi etkileyerek kişinin sempatik sinir sistemini inhibe etmesini sağladığı düşünülmektedir. Bu durum parasempatik sistemin (PSS) aktif hale geçmesine katkıda bulunur. PSS aktif hale geçmesi istendik güvenli ortamın sağlanıyor olması bakımından önemlidir. Travmatik süreçlerin yaşandığı ya da tekrardan aktiflendiği şartlarda yeni öğrenmeler gerçekleştirilemezken, bu güvenli ortamda Hipokampüs merkezli bilgi işleme süreci daha geniş bir hafıza taraması ve yeniden yapılandırmayı gerçekleştirerek yeni öğrenmelerin yolunu açıyor olabilir. (Chadwick, Mullally & Maguire, 2012; Chamberlin, 2019; Baror & Bar, 2016; Hassabis & Maguire, 2009)</p>
+    <p>
+    HYT, sığınak çalışmasından başlayarak seansın sonlandırılmasına kadar her aşamasında Porges’in (2009) Polivagal Teorisine uyumlu bir çalışma modeli sunmaktadır. Özellikle travma tedavilerinde ve anksiyöz durumlarda danışanların güvenli bir ortamda terapiye alınmaları hem teşhis (anı ya da imgeye ulaşmak) hem de tedavi (yeniden işlemleme) bakımından oldukça önemlidir. Masson (2016)’ya göre; Göz hareketleri ve çift yönlü uyarımın hipnozla birlikte kullanılmasının ventral vagal sistemi etkileyerek kişinin sempatik sinir sistemini inhibe etmesini sağladığı düşünülmektedir. Bu durum parasempatik sistemin (PSS) aktif hale geçmesine katkıda bulunur. PSS aktif hale geçmesi istendik güvenli ortamın sağlanıyor olması bakımından önemlidir. Travmatik süreçlerin yaşandığı ya da tekrardan aktiflendiği şartlarda yeni öğrenmeler gerçekleştirilemezken, bu güvenli ortamda Hipokampüs merkezli bilgi işleme süreci daha geniş bir hafıza taraması ve yeniden yapılandırmayı gerçekleştirerek yeni öğrenmelerin yolunu açıyor olabilir. (Chadwick, Mullally & Maguire, 2012; Chamberlin, 2019; Baror & Bar, 2016; Hassabis & Maguire, 2009)
+    </p>
   `
 },
 
   "hipnoz-kullanilmaz": {
     title: "Hipnoz hangi durumlarda kullanılmaz?",
     text: `
-      <p>Hipnoterapide yetkinlik önemli bir meseledir. Hipnozu biliyor olmak yetki alanı dışındakilere, tedavi amacıyla hastalara müdahale etme yetkisini vermez. <strong>Eğer hipnoterapistinizin Sağlık Bakanlığı onaylı sertifikası yoksa lütfen o kişiye güvenmeyin.<strong> (HYT, ZYT, MYT ve HBMT gibi sadece hipnotik tekniklerden oluşmayan uygulamalarda Sağlık Bakanlığı “Hipnoz Uygulama Sertifikası” gerekli olmamakla birlikte, terapistin ilgili eğitimlerden geçtiğine dair belgeyi talep edebilirsiniz.)</p>
+      <p>
+      Hipnoterapide yetkinlik önemli bir meseledir. Hipnozu biliyor olmak yetki alanı dışındakilere, tedavi amacıyla hastalara müdahale etme yetkisini vermez. <strong>Eğer hipnoterapistinizin Sağlık Bakanlığı onaylı sertifikası yoksa lütfen o kişiye güvenmeyin.</strong> (HYT, ZYT, MYT ve HBMT gibi sadece hipnotik tekniklerden oluşmayan uygulamalarda Sağlık Bakanlığı “Hipnoz Uygulama Sertifikası” gerekli olmamakla birlikte, terapistin ilgili eğitimlerden geçtiğine dair belgeyi talep edebilirsiniz.)
+      </p>
 
-      <p>Organik  beyin sendromları, psikotik yetmezliğe yatkın kişiler, bipolar bozukluk yaşayanlar,  paranoid sorunları olanlar, dissosiyatif bozukluğu olanlar ve border-line kişilik yapısı olanlar hipnoz için zayıf adaylardırlar ya da özel dikkat gösterilmesi gereken grubu oluştururlar (Brown ve Fromm, 1986).</p>
+      <p>
+      Organik  beyin sendromları, psikotik yetmezliğe yatkın kişiler, bipolar bozukluk yaşayanlar,  paranoid sorunları olanlar, dissosiyatif bozukluğu olanlar ve border-line kişilik yapısı olanlar hipnoz için zayıf adaylardırlar ya da özel dikkat gösterilmesi gereken grubu oluştururlar (Brown ve Fromm, 1986).
+      </p>
     `
   },
 
