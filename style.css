@@ -1250,3 +1250,20 @@ textarea {
     line-height: 1.75;
   }
 }
+/* CONTACT DETAILS */
+.contact-details {
+  margin-top: 18px;
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+}
+
+.contact-details strong {
+  color: var(--text);
+}
+
+.contact-details a {
+  color: var(--accent);
+  font-weight: 600;
+}
