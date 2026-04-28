@@ -1075,3 +1075,36 @@ textarea {
     margin-left: auto;
   }
 }
+/* =========================
+   CONTACT SECTION FINAL FIX
+========================= */
+
+@media (min-width: 700px) {
+  .contact-grid {
+    display: grid !important;
+    grid-template-columns: 0.9fr 1.1fr !important;
+    gap: 80px !important;
+    align-items: start !important;
+  }
+
+  .contact-grid > div {
+    max-width: 520px !important;
+  }
+
+  .contact-form {
+    width: 100% !important;
+    max-width: 560px !important;
+    justify-self: end !important;
+    margin-left: auto !important;
+  }
+}
+
+@media (max-width: 699px) {
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .contact-form {
+    max-width: 100% !important;
+  }
+}
