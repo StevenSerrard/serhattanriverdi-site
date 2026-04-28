@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://stevenserrard.github.io/serhattanriverdi-site/sitemap.xml
