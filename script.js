@@ -40,6 +40,13 @@ if (revealElements.length > 0) {
 ========================= */
 const hytTabs = document.querySelectorAll('.hyt-tab');
 const hytContent = document.querySelector('#hyt-content');
+const hytCta = `
+  <div class="hyt-cta">
+    <a class="button primary" href="index.html#iletisim">
+      Randevu ve Bilgi İçin İletişime Geçin
+    </a>
+  </div>
+`;
 
 const hytTexts = {
   "hyt-nedir": {
@@ -109,11 +116,6 @@ const hytTexts = {
 </p>
     `
   },
-   <div style="margin-top: 32px;">
-  <a class="button primary" href="index.html#iletisim">
-    Randevu ve Bilgi İçin İletişime Geçin
-  </a>
-</div>
 
   "hyt-teori": {
   title: "HYT’nin teorik arka planı",
@@ -151,11 +153,6 @@ const hytTexts = {
 </p>
   `
 },
-<div style="margin-top: 32px;">
-  <a class="button primary" href="index.html#iletisim">
-    Randevu ve Bilgi İçin İletişime Geçin
-  </a>
-</div>
 
   "hipnoz-kullanilmaz": {
     title: "Hipnoz hangi durumlarda kullanılmaz?",
@@ -177,11 +174,6 @@ const hytTexts = {
 </p>
     `
   },
-     <div style="margin-top: 32px;">
-  <a class="button primary" href="index.html#iletisim">
-    Randevu ve Bilgi İçin İletişime Geçin
-  </a>
-</div>
 
   "yanlis-bilinenler": {
     title: "Hipnozla ilgili yanlış bildiklerimiz",
@@ -225,11 +217,6 @@ const hytTexts = {
     `
   }
 };
-<div style="margin-top: 32px;">
-  <a class="button primary" href="index.html#iletisim">
-    Randevu ve Bilgi İçin İletişime Geçin
-  </a>
-</div>
 
 /* =========================
    TAB CLICK
@@ -247,9 +234,10 @@ if (hytTabs.length > 0 && hytContent) {
       void hytContent.offsetWidth;
 
       hytContent.innerHTML = `
-        <h1>${selected.title}</h1>
-        ${selected.text}
-      `;
+  <h1>${selected.title}</h1>
+  ${selected.text}
+  ${hytCta}
+`;
 
       hytContent.classList.add('fade-content');
 
