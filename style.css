@@ -1151,3 +1151,14 @@ textarea {
 .contact-form-final {
   align-self: start !important;
 }
+.button.primary {
+  letter-spacing: 0.04em;
+}
+
+.contact-form-final:hover {
+  transform: translateY(-2px);
+}
+
+.service-card {
+  cursor: pointer;
+}
