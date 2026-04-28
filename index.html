@@ -161,59 +161,62 @@
     </section>
 
     <section id="iletisim" class="section contact">
-      <div class="container contact-grid">
-        <div>
-          <p class="eyebrow">İletişim</p>
-          <h2>Randevu talebi oluşturun</h2>
+  <div class="container contact-layout-final">
 
-          <div class="contact-note">
-  <p>
-    Randevu talebi veya süreç hakkında bilgi almak için formu doldurabilirsiniz. Mesajınız değerlendirildikten sonra size uygun bir zaman aralığında dönüş sağlanacaktır.
-  </p>
+    <div class="contact-text-final">
+      <p class="eyebrow">İletişim</p>
+      <h2>Randevu talebi oluşturun</h2>
 
-  <p>
-    Bu form yalnızca ilk temas ve randevu talebi amacıyla kullanılmaktadır. Acil durumlar için uygun bir başvuru kanalı değildir.
-  </p>
-</div>
+      <div class="contact-note">
+        <p>
+          Randevu talebi veya süreç hakkında bilgi almak için formu doldurabilirsiniz. Mesajınız değerlendirildikten sonra size uygun bir zaman aralığında dönüş sağlanacaktır.
+        </p>
 
-        <form class="contact-form" action="https://formspree.io/f/meevnbko" method="POST">
-          <div class="form-row">
-            <label>
-              İsim Soyisim
-              <input type="text" name="isim_soyisim" placeholder="Ad Soyad" required />
-            </label>
-
-            <label>
-              Telefon
-              <input type="tel" name="telefon" placeholder="05xx xxx xx xx" required />
-            </label>
-          </div>
-
-          <label>
-            E-posta
-            <input type="email" name="email" placeholder="ornek@mail.com" required />
-          </label>
-
-          <label>
-            Mesajınız
-            <textarea name="mesaj" rows="5" placeholder="Kısaca başvuru nedeninizi veya mesajınızı yazabilirsiniz." required></textarea>
-          </label>
-
-          <label class="kvkk-check">
-            <input type="checkbox" name="kvkk_onay" required />
-            <span>
-              Kişisel verilerimin iletişim talebimin değerlendirilmesi amacıyla işlenmesini kabul ediyorum.
-            </span>
-          </label>
-
-          <button class="button primary full" type="submit">Mesaj Gönder</button>
-
-          <p class="form-note">
-            Paylaşılan bilgiler gizlilik ilkeleri çerçevesinde korunur ve yalnızca iletişim talebinizin değerlendirilmesi amacıyla kullanılır.
-          </p>
-        </form>
+        <p>
+          Bu form yalnızca ilk temas ve randevu talebi amacıyla kullanılmaktadır. Acil durumlar için uygun bir başvuru kanalı değildir.
+        </p>
       </div>
-    </section>
+    </div>
+
+    <form class="contact-form contact-form-final" action="https://formspree.io/f/meevnbko" method="POST">
+      <div class="form-row">
+        <label>
+          İsim Soyisim
+          <input type="text" name="isim_soyisim" placeholder="Ad Soyad" required />
+        </label>
+
+        <label>
+          Telefon
+          <input type="tel" name="telefon" placeholder="05xx xxx xx xx" required />
+        </label>
+      </div>
+
+      <label>
+        E-posta
+        <input type="email" name="email" placeholder="ornek@mail.com" required />
+      </label>
+
+      <label>
+        Mesajınız
+        <textarea name="mesaj" rows="5" placeholder="Kısaca başvuru nedeninizi veya mesajınızı yazabilirsiniz." required></textarea>
+      </label>
+
+      <label class="kvkk-check">
+        <input type="checkbox" name="kvkk_onay" required />
+        <span>
+          Kişisel verilerimin iletişim talebimin değerlendirilmesi amacıyla işlenmesini kabul ediyorum.
+        </span>
+      </label>
+
+      <button class="button primary full" type="submit">Mesaj Gönder</button>
+
+      <p class="form-note">
+        Paylaşılan bilgiler gizlilik ilkeleri çerçevesinde korunur ve yalnızca iletişim talebinizin değerlendirilmesi amacıyla kullanılır.
+      </p>
+    </form>
+
+  </div>
+</section>
   </main>
 
   <footer class="site-footer">
