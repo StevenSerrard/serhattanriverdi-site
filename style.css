@@ -1034,3 +1034,24 @@ textarea {
   transform: translateY(-2px);
   box-shadow: 0 28px 76px rgba(47, 56, 66, 0.11);
 }
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+.contact-note {
+  max-width: 520px;
+}
+.contact-form {
+  width: 100%;
+  max-width: 520px;
+}
+@media (max-width: 860px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.contact-form {
+  margin-left: auto;
+}
