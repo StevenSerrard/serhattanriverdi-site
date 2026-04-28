@@ -919,3 +919,32 @@ textarea {
 .hyt-content a:hover {
   opacity: 0.7;
 }
+/* =========================
+   HYT ACADEMIC REFERENCE STYLE
+========================= */
+
+.hyt-content .source-note {
+  margin-top: 44px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--muted);
+  text-align: left;
+}
+
+.hyt-content .source-note strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.hyt-content .source-note a {
+  color: var(--accent);
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 2px;
+}
+
+.hyt-content .source-note a:hover {
+  opacity: 0.75;
+}
