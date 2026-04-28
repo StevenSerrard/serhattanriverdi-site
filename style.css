@@ -1137,3 +1137,17 @@ textarea {
     justify-self: stretch !important;
   }
 }
+/* CONTACT FORM VERTICAL ALIGN FIX */
+.contact-layout-final {
+  align-items: start !important;
+}
+
+.contact-form-final {
+  margin-top: 0 !important;
+  transform: none !important;
+}
+
+.contact-text-final,
+.contact-form-final {
+  align-self: start !important;
+}
