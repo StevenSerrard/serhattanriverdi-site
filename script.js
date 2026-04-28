@@ -83,13 +83,12 @@ const hytTexts = {
       Yüzlerce klinik uygulama ve söz konusu çalışmaların ilk verileri ışığında şunu söylemek mümkündür; HYT, hızlı sonuç alınması, kolay uygulanabilirliği ve diğer terapi türlerine kolay entegrasyonu nedeniyle dikkat çekmektedir.
       </p>
       <p class="source-note">
-  <strong>Kaynak / Detaylı bilgi:</strong><br>
-  Bu içerikte yer alan bilgiler H.Y.T® ve klinik hipnozla ilgili bilgilendirici kaynaklardan yararlanılarak düzenlenmiştir.
-  Daha detaylı bilgi için
-  <a href="https://hyttr.com/hizmetler/hipnozla-ilgili-yanlis-bildiklerimiz" target="_blank" rel="noopener noreferrer">
-    hyttr.com
-  </a>
-  sayfası incelenebilir.
+  <strong>Kaynakça</strong><br>
+  Bu içerikte yer alan bilgiler ilgili literatür ve uygulama kaynaklarından derlenmiştir.
+  Daha detaylı bilgi için 
+  <a href="https://hyttr.com/hizmetler/hipnozla-ilgili-yanlis-bildiklerimiz" target="_blank">
+    ilgili kaynağı inceleyebilirsiniz
+  </a>.
 </p>
     `
   },
@@ -100,12 +99,13 @@ const hytTexts = {
       <p><strong>HYT içinde barındırdığı iki temel tekniğin kullanıldığı sorunlarda doğal olarak kullanılabilir.</strong></p>
 
       <p>Panik Bozukluğu, Kaygı Bozuklukları, OKB, Depresyon, Komplike Yas, Rahatsız Edici Anılar, olumsuz yaşam deneyimleri, Fobiler, Özgül fobiler, Ağrı Rahatsızlıkları, Yeme Bozuklukları, Performans Kaygısı, Stres Yönetimi, Bağımlılıklar, Cinsel ve/veya Fiziksel Taciz, Tecavüz, Beden Algısı Bozuklukları, Cinsel İşlev Bozuklukları, Davranım Bozuklukları, Özgüven Sorunları, Migren, Fibromiyalji ve Fantom Ağrısı, Kompleks ve basit travma ve Travma sonrası stres bozukluğu gibi alanlarda kullanılabilmektedir.</p>
-    <p>
-Bu içerik, ilgili literatür ve uygulama kaynaklarından derlenmiştir. 
-Detaylı bilgi için: 
-<a href="https://hyttr.com/hizmetler/hipnozla-ilgili-yanlis-bildiklerimiz" target="_blank">
-hyttr.com
-</a>
+    <p class="source-note">
+  <strong>Kaynakça</strong><br>
+  Bu içerikte yer alan bilgiler ilgili literatür ve uygulama kaynaklarından derlenmiştir.
+  Daha detaylı bilgi için 
+  <a href="https://hyttr.com/hizmetler/hipnozla-ilgili-yanlis-bildiklerimiz" target="_blank">
+    ilgili kaynağı inceleyebilirsiniz
+  </a>.
 </p>
     `
   },
@@ -137,13 +137,12 @@ hyttr.com
     HYT, sığınak çalışmasından başlayarak seansın sonlandırılmasına kadar her aşamasında Porges’in (2009) Polivagal Teorisine uyumlu bir çalışma modeli sunmaktadır. Özellikle travma tedavilerinde ve anksiyöz durumlarda danışanların güvenli bir ortamda terapiye alınmaları hem teşhis (anı ya da imgeye ulaşmak) hem de tedavi (yeniden işlemleme) bakımından oldukça önemlidir. Masson (2016)’ya göre; Göz hareketleri ve çift yönlü uyarımın hipnozla birlikte kullanılmasının ventral vagal sistemi etkileyerek kişinin sempatik sinir sistemini inhibe etmesini sağladığı düşünülmektedir. Bu durum parasempatik sistemin (PSS) aktif hale geçmesine katkıda bulunur. PSS aktif hale geçmesi istendik güvenli ortamın sağlanıyor olması bakımından önemlidir. Travmatik süreçlerin yaşandığı ya da tekrardan aktiflendiği şartlarda yeni öğrenmeler gerçekleştirilemezken, bu güvenli ortamda Hipokampüs merkezli bilgi işleme süreci daha geniş bir hafıza taraması ve yeniden yapılandırmayı gerçekleştirerek yeni öğrenmelerin yolunu açıyor olabilir. (Chadwick, Mullally & Maguire, 2012; Chamberlin, 2019; Baror & Bar, 2016; Hassabis & Maguire, 2009)
     </p>
     <p class="source-note">
-  <strong>Kaynak / Detaylı bilgi:</strong><br>
-  Bu içerikte yer alan bilgiler H.Y.T® ve klinik hipnozla ilgili bilgilendirici kaynaklardan yararlanılarak düzenlenmiştir.
-  Daha detaylı bilgi için
-  <a href="https://hyttr.com/hizmetler/hipnozla-ilgili-yanlis-bildiklerimiz" target="_blank" rel="noopener noreferrer">
-    hyttr.com
-  </a>
-  sayfası incelenebilir.
+  <strong>Kaynakça</strong><br>
+  Bu içerikte yer alan bilgiler ilgili literatür ve uygulama kaynaklarından derlenmiştir.
+  Daha detaylı bilgi için 
+  <a href="https://hyttr.com/hizmetler/hipnozla-ilgili-yanlis-bildiklerimiz" target="_blank">
+    ilgili kaynağı inceleyebilirsiniz
+  </a>.
 </p>
   `
 },
@@ -159,13 +158,12 @@ hyttr.com
       Organik  beyin sendromları, psikotik yetmezliğe yatkın kişiler, bipolar bozukluk yaşayanlar,  paranoid sorunları olanlar, dissosiyatif bozukluğu olanlar ve border-line kişilik yapısı olanlar hipnoz için zayıf adaylardırlar ya da özel dikkat gösterilmesi gereken grubu oluştururlar (Brown ve Fromm, 1986).
       </p>
       <p class="source-note">
-  <strong>Kaynak / Detaylı bilgi:</strong><br>
-  Bu içerikte yer alan bilgiler H.Y.T® ve klinik hipnozla ilgili bilgilendirici kaynaklardan yararlanılarak düzenlenmiştir.
-  Daha detaylı bilgi için
-  <a href="https://hyttr.com/hizmetler/hipnozla-ilgili-yanlis-bildiklerimiz" target="_blank" rel="noopener noreferrer">
-    hyttr.com
-  </a>
-  sayfası incelenebilir.
+  <strong>Kaynakça</strong><br>
+  Bu içerikte yer alan bilgiler ilgili literatür ve uygulama kaynaklarından derlenmiştir.
+  Daha detaylı bilgi için 
+  <a href="https://hyttr.com/hizmetler/hipnozla-ilgili-yanlis-bildiklerimiz" target="_blank">
+    ilgili kaynağı inceleyebilirsiniz
+  </a>.
 </p>
     `
   },
@@ -202,13 +200,12 @@ hyttr.com
       </p>
       <p>
 <p class="source-note">
-  <strong>Kaynak / Detaylı bilgi:</strong><br>
-  Bu içerikte yer alan bilgiler H.Y.T® ve klinik hipnozla ilgili bilgilendirici kaynaklardan yararlanılarak düzenlenmiştir.
-  Daha detaylı bilgi için
-  <a href="https://hyttr.com/hizmetler/hipnozla-ilgili-yanlis-bildiklerimiz" target="_blank" rel="noopener noreferrer">
-    hyttr.com
-  </a>
-  sayfası incelenebilir.
+  <strong>Kaynakça</strong><br>
+  Bu içerikte yer alan bilgiler ilgili literatür ve uygulama kaynaklarından derlenmiştir.
+  Daha detaylı bilgi için 
+  <a href="https://hyttr.com/hizmetler/hipnozla-ilgili-yanlis-bildiklerimiz" target="_blank">
+    ilgili kaynağı inceleyebilirsiniz
+  </a>.
 </p>
     `
   }
