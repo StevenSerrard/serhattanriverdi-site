@@ -109,6 +109,11 @@ const hytTexts = {
 </p>
     `
   },
+   <div style="margin-top: 32px;">
+  <a class="button primary" href="index.html#iletisim">
+    Randevu ve Bilgi İçin İletişime Geçin
+  </a>
+</div>
 
   "hyt-teori": {
   title: "HYT’nin teorik arka planı",
@@ -146,6 +151,11 @@ const hytTexts = {
 </p>
   `
 },
+<div style="margin-top: 32px;">
+  <a class="button primary" href="index.html#iletisim">
+    Randevu ve Bilgi İçin İletişime Geçin
+  </a>
+</div>
 
   "hipnoz-kullanilmaz": {
     title: "Hipnoz hangi durumlarda kullanılmaz?",
@@ -167,6 +177,11 @@ const hytTexts = {
 </p>
     `
   },
+     <div style="margin-top: 32px;">
+  <a class="button primary" href="index.html#iletisim">
+    Randevu ve Bilgi İçin İletişime Geçin
+  </a>
+</div>
 
   "yanlis-bilinenler": {
     title: "Hipnozla ilgili yanlış bildiklerimiz",
@@ -210,6 +225,11 @@ const hytTexts = {
     `
   }
 };
+<div style="margin-top: 32px;">
+  <a class="button primary" href="index.html#iletisim">
+    Randevu ve Bilgi İçin İletişime Geçin
+  </a>
+</div>
 
 /* =========================
    TAB CLICK
