@@ -948,3 +948,89 @@ textarea {
 .hyt-content .source-note a:hover {
   opacity: 0.75;
 }
+/* =========================
+   HOMEPAGE FINAL VISUAL POLISH
+========================= */
+
+/* Hakkımda metni */
+.about .content-block {
+  max-width: 680px;
+}
+
+.about .content-block p {
+  text-align: justify;
+  hyphens: auto;
+  line-height: 1.9;
+  margin-bottom: 20px;
+}
+
+/* Hizmet kartları */
+.service-grid {
+  align-items: stretch;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 230px;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  box-shadow: 0 28px 76px rgba(47, 56, 66, 0.12);
+}
+
+.service-card h3 {
+  font-size: clamp(21px, 2vw, 26px);
+  line-height: 1.25;
+  max-width: 95%;
+}
+
+.service-card p {
+  display: inline-flex;
+  width: fit-content;
+  margin-top: 26px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(125, 142, 163, 0.12);
+  color: var(--accent);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* İletişim açıklama kutusu */
+.contact-note {
+  margin-top: 26px;
+  max-width: 620px;
+  padding: 22px 24px;
+  border-left: 3px solid var(--accent);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.contact-note p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.contact-note p + p {
+  margin-top: 14px;
+}
+
+/* Formu biraz daha rafine gösterir */
+.contact-form {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.contact-form:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 28px 76px rgba(47, 56, 66, 0.11);
+}
