@@ -1108,3 +1108,32 @@ textarea {
     max-width: 100% !important;
   }
 }
+/* CONTACT FINAL LAYOUT - OVERRIDE */
+.contact-layout-final {
+  display: grid !important;
+  grid-template-columns: minmax(320px, 0.85fr) minmax(460px, 1.15fr) !important;
+  gap: 72px !important;
+  align-items: start !important;
+}
+
+.contact-text-final {
+  max-width: 520px !important;
+}
+
+.contact-form-final {
+  width: 100% !important;
+  max-width: 620px !important;
+  justify-self: end !important;
+}
+
+@media (max-width: 900px) {
+  .contact-layout-final {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+
+  .contact-form-final {
+    max-width: 100% !important;
+    justify-self: stretch !important;
+  }
+}
