@@ -82,12 +82,14 @@ const hytTexts = {
       <p>
       Yüzlerce klinik uygulama ve söz konusu çalışmaların ilk verileri ışığında şunu söylemek mümkündür; HYT, hızlı sonuç alınması, kolay uygulanabilirliği ve diğer terapi türlerine kolay entegrasyonu nedeniyle dikkat çekmektedir.
       </p>
-      <p>
-Bu içerik, ilgili literatür ve uygulama kaynaklarından derlenmiştir. 
-Detaylı bilgi için: 
-<a href="https://hyttr.com/hizmetler/hipnozla-ilgili-yanlis-bildiklerimiz" target="_blank">
-hyttr.com
-</a>
+      <p class="source-note">
+  <strong>Kaynak / Detaylı bilgi:</strong><br>
+  Bu içerikte yer alan bilgiler H.Y.T® ve klinik hipnozla ilgili bilgilendirici kaynaklardan yararlanılarak düzenlenmiştir.
+  Daha detaylı bilgi için
+  <a href="https://hyttr.com/hizmetler/hipnozla-ilgili-yanlis-bildiklerimiz" target="_blank" rel="noopener noreferrer">
+    hyttr.com
+  </a>
+  sayfası incelenebilir.
 </p>
     `
   },
@@ -134,12 +136,14 @@ hyttr.com
     <p>
     HYT, sığınak çalışmasından başlayarak seansın sonlandırılmasına kadar her aşamasında Porges’in (2009) Polivagal Teorisine uyumlu bir çalışma modeli sunmaktadır. Özellikle travma tedavilerinde ve anksiyöz durumlarda danışanların güvenli bir ortamda terapiye alınmaları hem teşhis (anı ya da imgeye ulaşmak) hem de tedavi (yeniden işlemleme) bakımından oldukça önemlidir. Masson (2016)’ya göre; Göz hareketleri ve çift yönlü uyarımın hipnozla birlikte kullanılmasının ventral vagal sistemi etkileyerek kişinin sempatik sinir sistemini inhibe etmesini sağladığı düşünülmektedir. Bu durum parasempatik sistemin (PSS) aktif hale geçmesine katkıda bulunur. PSS aktif hale geçmesi istendik güvenli ortamın sağlanıyor olması bakımından önemlidir. Travmatik süreçlerin yaşandığı ya da tekrardan aktiflendiği şartlarda yeni öğrenmeler gerçekleştirilemezken, bu güvenli ortamda Hipokampüs merkezli bilgi işleme süreci daha geniş bir hafıza taraması ve yeniden yapılandırmayı gerçekleştirerek yeni öğrenmelerin yolunu açıyor olabilir. (Chadwick, Mullally & Maguire, 2012; Chamberlin, 2019; Baror & Bar, 2016; Hassabis & Maguire, 2009)
     </p>
-    <p>
-Bu içerik, ilgili literatür ve uygulama kaynaklarından derlenmiştir. 
-Detaylı bilgi için: 
-<a href="https://hyttr.com/hizmetler/hipnozla-ilgili-yanlis-bildiklerimiz" target="_blank">
-hyttr.com
-</a>
+    <p class="source-note">
+  <strong>Kaynak / Detaylı bilgi:</strong><br>
+  Bu içerikte yer alan bilgiler H.Y.T® ve klinik hipnozla ilgili bilgilendirici kaynaklardan yararlanılarak düzenlenmiştir.
+  Daha detaylı bilgi için
+  <a href="https://hyttr.com/hizmetler/hipnozla-ilgili-yanlis-bildiklerimiz" target="_blank" rel="noopener noreferrer">
+    hyttr.com
+  </a>
+  sayfası incelenebilir.
 </p>
   `
 },
@@ -154,12 +158,14 @@ hyttr.com
       <p>
       Organik  beyin sendromları, psikotik yetmezliğe yatkın kişiler, bipolar bozukluk yaşayanlar,  paranoid sorunları olanlar, dissosiyatif bozukluğu olanlar ve border-line kişilik yapısı olanlar hipnoz için zayıf adaylardırlar ya da özel dikkat gösterilmesi gereken grubu oluştururlar (Brown ve Fromm, 1986).
       </p>
-      <p>
-Bu içerik, ilgili literatür ve uygulama kaynaklarından derlenmiştir. 
-Detaylı bilgi için: 
-<a href="https://hyttr.com/hizmetler/hipnozla-ilgili-yanlis-bildiklerimiz" target="_blank">
-hyttr.com
-</a>
+      <p class="source-note">
+  <strong>Kaynak / Detaylı bilgi:</strong><br>
+  Bu içerikte yer alan bilgiler H.Y.T® ve klinik hipnozla ilgili bilgilendirici kaynaklardan yararlanılarak düzenlenmiştir.
+  Daha detaylı bilgi için
+  <a href="https://hyttr.com/hizmetler/hipnozla-ilgili-yanlis-bildiklerimiz" target="_blank" rel="noopener noreferrer">
+    hyttr.com
+  </a>
+  sayfası incelenebilir.
 </p>
     `
   },
@@ -195,11 +201,14 @@ hyttr.com
       <strong>Bir kez hipnoz olduktan sonra artık o hipnoterapiste bağımlı hale gelir miyim?</strong> Hipnozun benim de kabul ettiğim bir teorik yaklaşımı onun öğrenilebilir bir durum olduğunu açıklar. Bunun ardında otohipnoz yatar. Otohipnoz, terapiste bağımlı kalmayı önleyen, sürekliliği sağlayan ve bireyin kendine güven duymasına katkıda bulunan bir süreç olarak kabul edilir. Diğer bir değişle hipnoterapi geleneksel terapi yöntemlerine kıyasla terapi sürelerini kısaltan bir etkiye sahiptir. Bu durum bağımlı kalmayı değil, özgürlüğü işaret eder. Başlarda yaşanan etkileşim bağımlılıktan ziyade terapötik ittifak gereği bağlılığı ifade etmektedir. Dolayısıyla hipnoterapiste bir bağımlılık söz konusu değildir.
       </p>
       <p>
-Bu içerik, ilgili literatür ve uygulama kaynaklarından derlenmiştir. 
-Detaylı bilgi için: 
-<a href="https://hyttr.com/hizmetler/hipnozla-ilgili-yanlis-bildiklerimiz" target="_blank">
-hyttr.com
-</a>
+<p class="source-note">
+  <strong>Kaynak / Detaylı bilgi:</strong><br>
+  Bu içerikte yer alan bilgiler H.Y.T® ve klinik hipnozla ilgili bilgilendirici kaynaklardan yararlanılarak düzenlenmiştir.
+  Daha detaylı bilgi için
+  <a href="https://hyttr.com/hizmetler/hipnozla-ilgili-yanlis-bildiklerimiz" target="_blank" rel="noopener noreferrer">
+    hyttr.com
+  </a>
+  sayfası incelenebilir.
 </p>
     `
   }
