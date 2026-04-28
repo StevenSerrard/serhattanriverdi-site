@@ -1290,3 +1290,25 @@ textarea {
   border: 2px solid var(--border);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
+.about-photo {
+  display: flex;
+  justify-content: center;
+  margin: 28px 0 18px;
+  opacity: 0;
+  transform: translateY(20px) scale(0.96);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-reveal.is-visible.about-photo {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.about-photo img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
