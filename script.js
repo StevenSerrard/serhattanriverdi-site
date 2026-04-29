@@ -253,3 +253,34 @@ if (hytTabs.length > 0 && hytContent) {
     defaultTab.click();
   }
 }
+const form = document.getElementById("contactForm");
+const formStatus = document.getElementById("formStatus");
+
+if (form) {
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const data = new FormData(form);
+
+    formStatus.textContent = "Mesajınız gönderiliyor...";
+
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: data,
+        headers: {
+          "Accept": "application/json"
+        }
+      });
+
+      if (response.ok) {
+        formStatus.textContent = "Mesajınız başarıyla gönderildi.";
+        form.reset();
+      } else {
+        formStatus.textContent = "Bir hata oluştu. Lütfen tekrar deneyin.";
+      }
+    } catch (error) {
+      formStatus.textContent = "Bağlantı hatası. Lütfen tekrar deneyin.";
+    }
+  });
+}
