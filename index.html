@@ -186,7 +186,7 @@
       </div>
     </div>
 
-    <form class="contact-form contact-form-final" action="https://formspree.io/f/meevnbko" method="POST">
+    <form id="contactForm" class="contact-form contact-form-final" action="https://formspree.io/f/meevnbko" method="POST">
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_subject" value="Yeni Randevu Talebi">
       <div class="form-row">
@@ -219,6 +219,8 @@
       </label>
 
       <button class="button primary full" type="submit">Mesaj Gönder</button>
+
+    <p id="formStatus" class="form-status" aria-live="polite"></p>
 
       <p class="form-note">
         Paylaşılan bilgiler gizlilik ilkeleri çerçevesinde korunur ve yalnızca iletişim talebinizin değerlendirilmesi amacıyla kullanılır.
