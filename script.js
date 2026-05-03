@@ -294,3 +294,15 @@ window.addEventListener('scroll', () => {
     siteHeader.classList.remove('scrolled');
   }
 });
+// Aktif sayfayı dropdown'da otomatik işaretleme
+const currentPage = window.location.pathname.split("/").pop();
+
+const dropdownLinks = document.querySelectorAll(".dropdown-menu a");
+
+dropdownLinks.forEach(link => {
+  const linkPage = link.getAttribute("href");
+
+  if (linkPage === currentPage) {
+    link.classList.add("active");
+  }
+});
