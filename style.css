@@ -1532,3 +1532,46 @@ textarea {
 .site-nav a:hover::after {
   width: 100%;
 }
+/* Hizmet detay sayfaları rafine görünüm */
+.service-detail {
+  max-width: 860px;
+  margin: 0 auto;
+  padding-top: 36px;
+}
+
+.service-detail h1 {
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  margin-bottom: 28px;
+}
+
+.service-detail h1::after {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 1px;
+  background: #b89b72;
+  margin-top: 22px;
+}
+
+.service-detail h2 {
+  margin-top: 44px;
+  margin-bottom: 16px;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+}
+
+.service-detail p,
+.service-detail li {
+  font-size: 1.05rem;
+  line-height: 1.85;
+}
+
+.service-detail ul {
+  margin-top: 18px;
+  padding-left: 22px;
+}
+
+.service-detail li {
+  margin-bottom: 8px;
+}
