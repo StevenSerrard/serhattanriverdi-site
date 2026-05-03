@@ -1688,3 +1688,13 @@ overflow: hidden;
   transform: translateY(0);
   pointer-events: auto;
 }
+/* Dropdown aktif sayfa */
+.dropdown-menu a.active {
+  background: rgba(184, 155, 114, 0.18);
+  color: #2f2f2f;
+  font-weight: 500;
+  padding-left: 22px; /* hover’daki kayma ile aynı */
+}
+.dropdown-menu a.active {
+  border-left: 2px solid #b89b72;
+}
