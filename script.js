@@ -306,3 +306,13 @@ dropdownLinks.forEach(link => {
     link.classList.add("active");
   }
 });
+// Üst menüde "Hizmetler" linkini aktif yap
+const servicesLink = document.querySelector(".services-link");
+
+if (
+  currentPage === "hyt.html" ||
+  currentPage === "yetiskin-terapisi.html" ||
+  currentPage === "cocuk-ergen-terapisi.html"
+) {
+  servicesLink.classList.add("active");
+}
