@@ -316,3 +316,29 @@ if (
 ) {
   servicesLink.classList.add("active");
 }
+// Aktif sayfayı dropdown'da otomatik işaretleme
+const currentPage = window.location.pathname.split("/").pop();
+
+const dropdownLinks = document.querySelectorAll(".dropdown-menu a");
+
+dropdownLinks.forEach(link => {
+  const linkPage = link.getAttribute("href");
+
+  if (linkPage === currentPage) {
+    link.classList.add("active");
+  }
+});
+
+// Üst menüde "Hizmetler" linkini aktif yap
+const servicesLink = document.querySelector(".services-link");
+
+if (
+  servicesLink &&
+  (
+    currentPage === "hyt.html" ||
+    currentPage === "yetiskin-terapisi.html" ||
+    currentPage === "cocuk-ergen-terapisi.html"
+  )
+) {
+  servicesLink.classList.add("active");
+}
