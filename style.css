@@ -1661,6 +1661,9 @@ body {
   pointer-events: none;
   transition: all 0.25s ease;
   z-index: 100;
+
+  border-radius: 14px;
+overflow: hidden;
 }
 
 .dropdown-menu a {
