@@ -1381,3 +1381,17 @@ textarea {
 .site-header.scrolled .site-logo img {
   height: 68px;
 }
+/* Logo fade-in animasyonu */
+.site-logo {
+  opacity: 0;
+  transform: translateY(-8px);
+  animation: logoFadeIn 0.8s ease forwards;
+  animation-delay: 0.15s;
+}
+
+@keyframes logoFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
