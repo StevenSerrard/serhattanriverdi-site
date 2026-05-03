@@ -1346,3 +1346,8 @@ textarea {
   align-items: center;
   justify-content: space-between;
 }
+.site-logo img {
+  height: 62px;
+  width: auto;
+  display: block;
+}
