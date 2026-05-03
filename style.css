@@ -1707,3 +1707,10 @@ overflow: hidden;
 .site-nav a.active::after {
   width: 100%;
 }
+.dropdown-menu a::after {
+  display: none;
+}
+.dropdown {
+  display: flex;
+  align-items: center;
+}
