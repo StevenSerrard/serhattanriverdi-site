@@ -1324,7 +1324,12 @@ textarea {
 }
 
 .site-logo img {
-  height: 74px;
+  height: 48px;
   width: auto;
   display: block;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
