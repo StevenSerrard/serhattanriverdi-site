@@ -1642,3 +1642,42 @@ body {
   transform: translateY(-6px);
   border-color: rgba(184, 155, 114, 0.38);
 }
+/* Dropdown menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 140%;
+  left: 0;
+  min-width: 220px;
+  background: #f8f3ec;
+  border: 1px solid rgba(184, 155, 114, 0.25);
+  box-shadow: 0 12px 30px rgba(58, 58, 58, 0.08);
+  padding: 10px 0;
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+  transition: all 0.25s ease;
+  z-index: 100;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 16px;
+  font-size: 0.95rem;
+  color: #3a3a3a;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background: rgba(184, 155, 114, 0.12);
+}
+
+/* Hover ile açılma */
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
