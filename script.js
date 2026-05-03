@@ -287,35 +287,16 @@ if (form) {
 // Scroll sonrası header küçülme efekti
 const siteHeader = document.querySelector('.site-header');
 
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 40) {
-    siteHeader.classList.add('scrolled');
-  } else {
-    siteHeader.classList.remove('scrolled');
-  }
-});
-// Aktif sayfayı dropdown'da otomatik işaretleme
-const currentPage = window.location.pathname.split("/").pop();
-
-const dropdownLinks = document.querySelectorAll(".dropdown-menu a");
-
-dropdownLinks.forEach(link => {
-  const linkPage = link.getAttribute("href");
-
-  if (linkPage === currentPage) {
-    link.classList.add("active");
-  }
-});
-// Üst menüde "Hizmetler" linkini aktif yap
-const servicesLink = document.querySelector(".services-link");
-
-if (
-  currentPage === "hyt.html" ||
-  currentPage === "yetiskin-terapisi.html" ||
-  currentPage === "cocuk-ergen-terapisi.html"
-) {
-  servicesLink.classList.add("active");
+if (siteHeader) {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 40) {
+      siteHeader.classList.add('scrolled');
+    } else {
+      siteHeader.classList.remove('scrolled');
+    }
+  });
 }
+
 // Aktif sayfayı dropdown ve üst menüde otomatik işaretleme
 (() => {
   const page = window.location.pathname.split("/").pop() || "index.html";
