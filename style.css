@@ -1496,3 +1496,39 @@ textarea {
     text-align: center;
   }
 }
+/* Premium header görünümü */
+.site-header {
+  background-color: rgba(248, 243, 236, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(58, 58, 58, 0.06);
+  transition: padding 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.site-header.scrolled {
+  background-color: rgba(248, 243, 236, 0.98);
+  box-shadow: 0 10px 30px rgba(58, 58, 58, 0.08);
+}
+
+.site-nav a {
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+.site-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 1px;
+  background-color: #b89b72;
+  transition: width 0.25s ease;
+}
+
+.site-nav a:hover {
+  color: #2f2f2f;
+}
+
+.site-nav a:hover::after {
+  width: 100%;
+}
