@@ -1333,3 +1333,16 @@ textarea {
   align-items: center;
   justify-content: space-between;
 }
+.site-logo img {
+  height: 44px;
+  width: auto;
+  display: block;
+}
+.site-header {
+  padding: 12px 0;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
