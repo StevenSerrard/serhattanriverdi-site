@@ -14,14 +14,15 @@
   <meta name="robots" content="index, follow">
   <meta name="google-site-verification" content="W_SZIw-P8R8GCUlX1ovch-94G32yhOvLEwSkGy0B6cE" />
 
-  <link rel="stylesheet" href="style.css?v=27" />
+  <link rel="icon" href="assets/images/favicon.ico">
+  <link rel="stylesheet" href="style.css?v=28" />
 
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Psychologist",
   "name": "Uzman Klinik Psikolog Serhat Tanrıverdi",
-  "url": "https://stevenserrard.github.io/serhattanriverdi-site/",
+  "url": "https://serhattanriverdi.com/",
   "description": "Uzman Klinik Psikolog Serhat Tanrıverdi. Psikoterapi, çocuk ve ergen terapisi, yetişkin terapisi ve H.Y.T® alanlarında hizmet vermektedir.",
   "telephone": "+905526523040",
   "address": {
@@ -46,9 +47,8 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#anasayfa" class="brand" aria-label="Ana sayfa">
-        <span>Uzman Klinik Psikolog</span>
-        <strong>Serhat TANRIVERDİ</strong>
+      <a href="#anasayfa" class="brand site-logo" aria-label="Ana sayfa">
+        <img src="assets/images/logo_header_web.png" alt="Uzman Klinik Psikolog Serhat Tanrıverdi Logo">
       </a>
 
       <button class="menu-toggle" aria-label="Menüyü aç/kapat">
@@ -106,16 +106,16 @@
     <section id="hakkimda" class="section about">
       <div class="container split-grid">
         <div>
-         <p class="eyebrow">Hakkımda</p>
+          <p class="eyebrow">Hakkımda</p>
 
-<div class="about-photo scroll-reveal">
-  <img src="IMG_4286.JPG" alt="Uzman Klinik Psikolog Serhat Tanrıverdi">
-</div>
+          <div class="about-photo scroll-reveal">
+            <img src="IMG_4286.JPG" alt="Uzman Klinik Psikolog Serhat Tanrıverdi">
+          </div>
 
-<h2 class="about-title scroll-reveal">
-  <span class="name">Serhat TANRIVERDİ</span>
-  <span class="title">Uzman Klinik Psikolog</span>
-</h2>
+          <h2 class="about-title scroll-reveal">
+            <span class="name">Serhat TANRIVERDİ</span>
+            <span class="title">Uzman Klinik Psikolog</span>
+          </h2>
         </div>
 
         <div class="content-block">
@@ -169,82 +169,83 @@
     </section>
 
     <section id="iletisim" class="section contact">
-  <div class="container contact-layout-final">
+      <div class="container contact-layout-final">
 
-    <div class="contact-text-final">
-      <p class="eyebrow">İletişim</p>
-      <h2>Randevu talebi oluşturun</h2>
-      
-      <div class="contact-note">
-        <p>
-          Randevu talebi veya süreç hakkında bilgi almak için formu doldurabilirsiniz. Mesajınız değerlendirildikten sonra size uygun bir zaman aralığında dönüş sağlanacaktır.
-        </p>
+        <div class="contact-text-final">
+          <p class="eyebrow">İletişim</p>
+          <h2>Randevu talebi oluşturun</h2>
 
-        <p>
-          Bu form yalnızca ilk temas ve randevu talebi amacıyla kullanılmaktadır. Acil durumlar için uygun bir başvuru kanalı değildir.
-        </p>
-      </div>
-    </div>
+          <div class="contact-note">
+            <p>
+              Randevu talebi veya süreç hakkında bilgi almak için formu doldurabilirsiniz. Mesajınız değerlendirildikten sonra size uygun bir zaman aralığında dönüş sağlanacaktır.
+            </p>
 
-    <form id="contactForm" class="contact-form contact-form-final" action="https://formspree.io/f/meevnbko" method="POST">
+            <p>
+              Bu form yalnızca ilk temas ve randevu talebi amacıyla kullanılmaktadır. Acil durumlar için uygun bir başvuru kanalı değildir.
+            </p>
+          </div>
+        </div>
+
+        <form id="contactForm" class="contact-form contact-form-final" action="https://formspree.io/f/meevnbko" method="POST">
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_subject" value="Yeni Randevu Talebi">
-      <div class="form-row">
-        <label>
-          İsim Soyisim
-          <input type="text" name="isim_soyisim" placeholder="Ad Soyad" required />
-        </label>
 
-        <label>
-          Telefon
-          <input type="tel" name="telefon" placeholder="05xx xxx xx xx" required />
-        </label>
+          <div class="form-row">
+            <label>
+              İsim Soyisim
+              <input type="text" name="isim_soyisim" placeholder="Ad Soyad" required />
+            </label>
+
+            <label>
+              Telefon
+              <input type="tel" name="telefon" placeholder="05xx xxx xx xx" required />
+            </label>
+          </div>
+
+          <label>
+            E-posta
+            <input type="email" name="email" placeholder="ornek@mail.com" required />
+          </label>
+
+          <label>
+            Mesajınız
+            <textarea name="mesaj" rows="5" placeholder="Kısaca başvuru nedeninizi veya mesajınızı yazabilirsiniz." required></textarea>
+          </label>
+
+          <label class="kvkk-check">
+            <input type="checkbox" name="kvkk_onay" required />
+            <span>
+              Kişisel verilerimin iletişim talebimin değerlendirilmesi amacıyla işlenmesini kabul ediyorum.
+            </span>
+          </label>
+
+          <button class="button primary full" type="submit">Mesaj Gönder</button>
+
+          <p id="formStatus" class="form-status" aria-live="polite"></p>
+
+          <p class="form-note">
+            Paylaşılan bilgiler gizlilik ilkeleri çerçevesinde korunur ve yalnızca iletişim talebinizin değerlendirilmesi amacıyla kullanılır.
+          </p>
+        </form>
+
       </div>
-
-      <label>
-        E-posta
-        <input type="email" name="email" placeholder="ornek@mail.com" required />
-      </label>
-
-      <label>
-        Mesajınız
-        <textarea name="mesaj" rows="5" placeholder="Kısaca başvuru nedeninizi veya mesajınızı yazabilirsiniz." required></textarea>
-      </label>
-
-      <label class="kvkk-check">
-        <input type="checkbox" name="kvkk_onay" required />
-        <span>
-          Kişisel verilerimin iletişim talebimin değerlendirilmesi amacıyla işlenmesini kabul ediyorum.
-        </span>
-      </label>
-
-      <button class="button primary full" type="submit">Mesaj Gönder</button>
-
-    <p id="formStatus" class="form-status" aria-live="polite"></p>
-
-      <p class="form-note">
-        Paylaşılan bilgiler gizlilik ilkeleri çerçevesinde korunur ve yalnızca iletişim talebinizin değerlendirilmesi amacıyla kullanılır.
-      </p>
-    </form>
-
-  </div>
-</section>
+    </section>
   </main>
 
   <footer class="site-footer">
-  <div class="container footer-inner">
-    <div>
-      <p>Emrah Mah. Gn. Dr. Tevfik Sağlam Cad. Köşk Apt. 70/10<br>
-      Keçiören / ANKARA</p>
-      <p><a href="tel:+905526523040">0552 652 30 40</a></p>
-    </div>
+    <div class="container footer-inner">
+      <div>
+        <p>Emrah Mah. Gn. Dr. Tevfik Sağlam Cad. Köşk Apt. 70/10<br>
+        Keçiören / ANKARA</p>
+        <p><a href="tel:+905526523040">0552 652 30 40</a></p>
+      </div>
 
-    <div>
-      <p>Psikoterapi, etik çerçeve ve güvenli çalışma alanı</p>
-      <p>© 2026 Uzman Klinik Psikolog Serhat TANRIVERDİ</p>
+      <div>
+        <p>Psikoterapi, etik çerçeve ve güvenli çalışma alanı</p>
+        <p>© 2026 Uzman Klinik Psikolog Serhat TANRIVERDİ</p>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
   <script src="script.js?v=18"></script>
 </body>
