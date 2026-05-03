@@ -1698,3 +1698,12 @@ overflow: hidden;
 .dropdown-menu a.active {
   border-left: 2px solid #b89b72;
 }
+/* Üst menü aktif link */
+.site-nav a.active {
+  color: #2f2f2f;
+  font-weight: 500;
+}
+
+.site-nav a.active::after {
+  width: 100%;
+}
