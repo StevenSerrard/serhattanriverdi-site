@@ -1317,3 +1317,14 @@ textarea {
   padding-top: 22px;
   border-top: 1px solid var(--border);
 }
+.site-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.site-logo img {
+  height: 74px;
+  width: auto;
+  display: block;
+}
