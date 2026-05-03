@@ -1356,3 +1356,9 @@ textarea {
   width: auto;
   display: block;
 }
+.site-header {
+  padding: 18px 0;
+}
+.site-logo {
+  margin-right: 10px;
+}
