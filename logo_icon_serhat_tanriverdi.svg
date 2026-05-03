@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Serhat Tanrıverdi minimalist ayna ikonu</title>
+  <desc id="desc">İnce çizgili açık ayna formu ve soyut yüz profili.</desc>
+  <rect width="512" height="512" fill="none"/>
+  <g fill="none" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M331 91 C252 57 150 105 127 209 C104 317 168 409 236 422" stroke-width="8"/>
+    <path d="M330 91 C399 126 431 206 416 285" stroke-width="7" opacity=".9"/>
+    <path d="M414 292 C402 349 363 398 306 421" stroke-width="7" opacity=".9"/>
+    <path d="M260 422 C241 437 221 439 198 428" stroke-width="6"/>
+    <path d="M268 422 C288 438 309 439 333 428" stroke-width="6"/>
+    <path d="M191 126 C180 172 188 205 216 239 C228 254 219 276 232 294 C244 310 264 314 251 334 C241 348 264 354 248 366 C237 374 253 381 244 390 C239 395 247 402 260 410" stroke-width="6"/>
+  </g>
+</svg>
