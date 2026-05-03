@@ -1351,3 +1351,8 @@ textarea {
   width: auto;
   display: block;
 }
+.site-logo img {
+  height: 62px;
+  width: auto;
+  display: block;
+}
