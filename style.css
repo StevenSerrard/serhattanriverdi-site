@@ -407,6 +407,7 @@ a {
 
 .hero-image .hero-actions {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   gap: 16px;
   margin-top: 36px;
@@ -414,76 +415,63 @@ a {
 
 .hero-image .hero-actions .button {
   min-height: 54px;
-  padding: 0 26px;
+  padding: 0 27px;
+
   border-radius: 999px;
+
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.025em;
+
+  box-shadow: none;
 }
 
+.hero-image .hero-actions .button i {
+  font-size: 18px;
+  margin-right: 2px;
+}
+
+/* RANDEVU */
+
 .hero-image .hero-actions .button.primary {
-  background: #3a3029;
-  color: #fffaf4;
-  box-shadow: 0 12px 28px rgba(58, 48, 41, 0.18);
+  min-width: 222px;
+
+  border: 1px solid #b98552;
+
+  background: #b98552;
+  color: #ffffff;
+
+  box-shadow: 0 8px 22px rgba(91, 60, 35, 0.10);
 }
 
 .hero-image .hero-actions .button.primary:hover {
-  background: #2d251f;
+  background: #a97546;
+  border-color: #a97546;
+
   transform: translateY(-2px);
+  opacity: 1;
 }
 
+/* HAKKIMDA */
+
 .hero-image .hero-actions .button.secondary {
-  border: 1px solid rgba(157, 116, 72, 0.65);
-  background: rgba(248, 243, 236, 0.22);
-  color: #362f2a;
-  backdrop-filter: blur(5px);
+  min-width: 182px;
+
+  border: 1px solid rgba(174, 123, 75, 0.70);
+
+  background: rgba(248, 243, 236, 0.24);
+  color: #332b25;
+
+  backdrop-filter: blur(3px);
 }
 
 .hero-image .hero-actions .button.secondary:hover {
-  background: rgba(248, 243, 236, 0.52);
+  background: rgba(248, 243, 236, 0.55);
+  border-color: #a97546;
+
   transform: translateY(-2px);
 }
-
-/* Hero giriş animasyonu */
-
-.hero-image .hero-content .eyebrow,
-.hero-image .hero-content h1,
-.hero-divider,
-.hero-intro,
-.hero-image .hero-actions {
-  opacity: 0;
-  transform: translateY(16px);
-  animation: heroFadeUp 0.8s ease forwards;
-}
-
-.hero-image .hero-content .eyebrow {
-  animation-delay: 0.15s;
-}
-
-.hero-image .hero-content h1 {
-  animation-delay: 0.30s;
-}
-
-.hero-divider {
-  animation-delay: 0.42s;
-}
-
-.hero-intro {
-  animation-delay: 0.52s;
-}
-
-.hero-image .hero-actions {
-  animation-delay: 0.65s;
-}
-
-@keyframes heroFadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 /* =========================
    ABOUT
 ========================= */
