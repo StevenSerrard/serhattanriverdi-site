@@ -1191,12 +1191,31 @@ textarea {
     font-size: 0.88rem;
   }
 
+  @media (max-width: 700px) {
+
   .whatsapp-float {
-    left: 18px;
-    bottom: 18px;
-    width: 54px;
-    height: 54px;
-    font-size: 1.5rem;
+    left: 14px;
+    bottom: 14px;
+
+    min-width: 0;
+    width: 58px;
+    height: 58px;
+
+    padding: 5px;
+
+    justify-content: center;
+  }
+
+  .whatsapp-icon {
+    width: 48px;
+    height: 48px;
+    flex-basis: 48px;
+
+    font-size: 25px;
+  }
+
+  .whatsapp-text {
+    display: none;
   }
 }
 
