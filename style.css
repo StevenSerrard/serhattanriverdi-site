@@ -18,23 +18,20 @@
   padding: 80px 0;
 }
 
-/* Bej katman:
-   solda metni güçlü biçimde okunur tutar,
-   sağa doğru terapi odasını görünür bırakır */
+/* Bej katman */
 .hero-overlay {
   position: absolute;
   inset: 0;
   z-index: -1;
 
-  background:
-    linear-gradient(
-      90deg,
-      rgba(248, 243, 236, 0.96) 0%,
-      rgba(248, 243, 236, 0.91) 25%,
-      rgba(248, 243, 236, 0.76) 48%,
-      rgba(248, 243, 236, 0.38) 72%,
-      rgba(248, 243, 236, 0.16) 100%
-    );
+  background: linear-gradient(
+    90deg,
+    rgba(248, 243, 236, 0.96) 0%,
+    rgba(248, 243, 236, 0.91) 25%,
+    rgba(248, 243, 236, 0.76) 48%,
+    rgba(248, 243, 236, 0.38) 72%,
+    rgba(248, 243, 236, 0.16) 100%
+  );
 }
 
 .hero-image-inner {
@@ -63,23 +60,31 @@
 .hero-image h1 {
   margin: 0;
   max-width: 680px;
-
   font-size: clamp(48px, 5.5vw, 76px);
   line-height: 1.04;
   letter-spacing: -0.045em;
   font-weight: 500;
-
   color: #342c27;
 }
 
 .hero-image .lead {
   max-width: 590px;
   margin: 26px 0 0;
-
   font-size: 18px;
   line-height: 1.82;
-
   color: #4d4a46;
+}
+
+/* Alıntı */
+.hero-image .quote-line {
+  max-width: 560px;
+  margin-top: 32px;
+  padding-left: 18px;
+  border-left: 2px solid rgba(154, 123, 84, 0.65);
+  color: #443d38;
+  font-size: 21px;
+  line-height: 1.7;
+  font-style: italic;
 }
 
 .hero-image .hero-actions {
@@ -89,16 +94,13 @@
   margin-top: 38px;
 }
 
-/* ANA CTA */
+/* Ana CTA */
 .hero-image .button.primary {
   min-height: 54px;
   padding: 0 27px;
-
   border-radius: 999px;
-
   background: #3a3a3a;
   color: #f8f3ec;
-
   box-shadow: 0 12px 28px rgba(58, 58, 58, 0.16);
 
   transition:
@@ -110,8 +112,211 @@
 .hero-image .button.primary:hover {
   background: #2f2f2f;
   transform: translateY(-2px);
-
   box-shadow: 0 16px 34px rgba(58, 58, 58, 0.22);
+}
+
+/* Hakkımda CTA */
+.hero-image .button.secondary {
+  min-height: 54px;
+  padding: 0 27px;
+  border-radius: 999px;
+  border: 1px solid rgba(154, 123, 84, 0.55);
+  background: rgba(248, 243, 236, 0.46);
+  color: #3c3834;
+  backdrop-filter: blur(8px);
+
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.hero-image .button.secondary:hover {
+  background: rgba(248, 243, 236, 0.78);
+  border-color: #9a7b54;
+  transform: translateY(-2px);
+}
+
+/* Hero giriş animasyonu */
+.hero-image .hero-content .eyebrow,
+.hero-image .hero-content h1,
+.hero-image .hero-content .lead,
+.hero-image .hero-content .quote-line,
+.hero-image .hero-actions {
+  opacity: 0;
+  transform: translateY(18px);
+  animation: heroFadeUp 0.8s ease forwards;
+}
+
+.hero-image .hero-content .eyebrow {
+  animation-delay: 0.15s;
+}
+
+.hero-image .hero-content h1 {
+  animation-delay: 0.30s;
+}
+
+.hero-image .hero-content .lead:nth-of-type(2) {
+  animation-delay: 0.45s;
+}
+
+.hero-image .hero-content .lead:nth-of-type(3) {
+  animation-delay: 0.60s;
+}
+
+.hero-image .hero-content .quote-line {
+  animation-delay: 0.70s;
+}
+
+.hero-image .hero-actions {
+  animation-delay: 0.80s;
+}
+
+@keyframes heroFadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Aşağı oku */
+.hero-scroll {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(58, 58, 58, 0.18);
+  border-radius: 50%;
+
+  background: rgba(248, 243, 236, 0.62);
+  backdrop-filter: blur(8px);
+
+  color: #3a3a3a;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.hero-scroll:hover {
+  transform: translateX(-50%) translateY(3px);
+  background: rgba(248, 243, 236, 0.88);
+}
+
+
+/* =========================
+   HERO RESPONSIVE
+========================= */
+
+@media (max-width: 860px) {
+
+  .hero-image {
+    min-height: 690px;
+    padding: 64px 0 82px;
+    background-position: 63% center;
+  }
+
+  .hero-overlay {
+    background: linear-gradient(
+      90deg,
+      rgba(248, 243, 236, 0.96) 0%,
+      rgba(248, 243, 236, 0.91) 52%,
+      rgba(248, 243, 236, 0.63) 100%
+    );
+  }
+
+  .hero-image-inner {
+    width: min(100% - 28px, 1180px);
+    min-height: auto;
+  }
+
+  .hero-image .hero-content {
+    width: 82%;
+  }
+
+  .hero-image h1 {
+    font-size: clamp(42px, 10vw, 60px);
+  }
+
+  .hero-image .lead {
+    max-width: 540px;
+    font-size: 17px;
+    line-height: 1.75;
+  }
+
+  .hero-image .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-image .button {
+    width: auto;
+    min-width: 210px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .hero-image {
+    min-height: 720px;
+    padding: 54px 0 78px;
+    background-position: 67% center;
+  }
+
+  .hero-overlay {
+    background: linear-gradient(
+      90deg,
+      rgba(248, 243, 236, 0.97) 0%,
+      rgba(248, 243, 236, 0.93) 60%,
+      rgba(248, 243, 236, 0.72) 100%
+    );
+  }
+
+  .hero-image .hero-content {
+    width: 100%;
+  }
+
+  .hero-image h1 {
+    max-width: 95%;
+    font-size: clamp(38px, 11vw, 50px);
+    line-height: 1.08;
+  }
+
+  .hero-image .lead {
+    max-width: 92%;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .hero-image .quote-line {
+    max-width: 92%;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .hero-image .hero-actions {
+    width: 100%;
+  }
+
+  .hero-image .button {
+    width: 100%;
+  }
+
+  .hero-scroll {
+    bottom: 18px;
+  }
 }
 
 /* HAKKIMDA CTA */
