@@ -10,7 +10,7 @@
   overflow: hidden;
   isolation: isolate;
 
-  background-image: url("assets/images/therapy-room-hero.png");
+ background-image: url("assets/images/therapy-room-hero.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
