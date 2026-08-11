@@ -1429,3 +1429,15 @@ textarea {
     box-shadow: 0 8px 24px rgba(45, 37, 30, 0.08);
   }
 }
+  /* HEADER MENÜ ZEMİNİ */
+@media screen and (min-width: 769px) {
+  .header-inner .site-nav {
+    padding: 12px 22px !important;
+    background: rgba(248, 244, 237, 0.78) !important;
+    border: 1px solid rgba(255, 255, 255, 0.55) !important;
+    border-radius: 999px !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 8px 24px rgba(45, 37, 30, 0.1) !important;
+  }
+}
