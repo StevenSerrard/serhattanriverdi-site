@@ -734,6 +734,8 @@ a {
     flex: 0 1 calc(50% - 10px);
     width: calc(50% - 10px);
     max-width: none;
+
+    height: 710px;
   }
 
 }
@@ -753,12 +755,9 @@ a {
     width: 100%;
     max-width: 500px;
 
-    margin: 0 auto 28px;
-  }
+    height: calc((100vw - 28px) * 1.68);
 
-  .reel-item iframe {
-    clip-path: inset(0 0 95px 0);
-    margin-bottom: -95px !important;
+    margin: 0 auto 28px;
   }
 
 }
