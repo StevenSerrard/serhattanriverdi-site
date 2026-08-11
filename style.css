@@ -696,7 +696,13 @@ a {
   min-width: 0 !important;
   max-width: 100% !important;
 
-  margin: 0 !important;
+  display: block;
+
+  /* Instagram'ın alt etkileşim bölümünü görsel olarak kırpar */
+  clip-path: inset(0 0 110px 0);
+
+  /* Kırpılan alanın aşağıda boşluk bırakmasını azaltır */
+  margin: 0 0 -110px 0 !important;
 }
 
 
@@ -751,6 +757,11 @@ a {
     max-width: 500px;
 
     margin: 0 auto 28px;
+  }
+
+  .reel-item iframe {
+    clip-path: inset(0 0 95px 0);
+    margin-bottom: -95px !important;
   }
 
 }
