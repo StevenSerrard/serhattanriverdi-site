@@ -120,7 +120,7 @@ const contentHub = `<main class="content-main content-hub">
       <section class="content-expand-panel" id="videolar" data-content-panel hidden>
         <div class="content-panel-heading"><p class="eyebrow">İçerikler</p><h2>Videolar</h2></div>
         <div class="content-video-grid">${videos}</div>
-        <div class="content-video-action"><a class="button secondary" href="https://www.instagram.com/psk.serhattanriverdi/" target="_blank" rel="noopener noreferrer">Tüm Videolar</a></div>
+        <div class="content-video-action"><a class="button secondary" href="https://www.instagram.com/psk.tanriverdi/" target="_blank" rel="noopener noreferrer">Tüm Videolar</a></div>
       </section>
     </div>
   </section>
