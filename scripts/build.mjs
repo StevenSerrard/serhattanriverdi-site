@@ -125,6 +125,9 @@ const contentHub = `<main class="content-main content-hub">
   </section>
 </main><script async src="https://www.instagram.com/embed.js"></script>`;
 await writeFile(path.join(out, "icerikler.html"), shell({ title: "İçerikler | Uzman Klinik Psikolog Serhat Tanrıverdi", description: "Psikoterapi, ruh sağlığı ve psikoloji üzerine yazılar ve videolar.", canonical: "https://serhattanriverdi.com/icerikler.html", content: contentHub }), "utf8");
+const legacyRedirect = (target) => `<!DOCTYPE html><html lang="tr"><head><meta charset="UTF-8"><meta name="robots" content="noindex"><meta http-equiv="refresh" content="0; url=${target}"><link rel="canonical" href="https://serhattanriverdi.com/${target}"><script>window.location.replace("${target}");</script></head><body></body></html>`;
+await writeFile(path.join(out, "yazilar.html"), legacyRedirect("icerikler.html#yazilar"), "utf8");
+await writeFile(path.join(out, "videolar.html"), legacyRedirect("icerikler.html#videolar"), "utf8");
 
 await mkdir(path.join(out, "yazilar"), { recursive: true });
 for (const post of posts) {
