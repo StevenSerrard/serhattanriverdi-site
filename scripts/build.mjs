@@ -49,8 +49,14 @@ const readCollection = async (folder) => Promise.all((await readdir(path.join(ro
 }));
 const [postsRaw, authors, categories] = await Promise.all([readCollection("posts"), readCollection("authors"), readCollection("categories")]);
 const posts = postsRaw.filter((post) => post.published).sort((a, b) => new Date(b.date) - new Date(a.date));
-const authorMap = new Map(authors.map((author) => [author.name, author]));
-const categoryMap = new Map(categories.map((category) => [category.name, category]));
+const collectionMap = (items, folder) => new Map(items.flatMap((item) => [
+  [item.name, item],
+  [item.filename, item],
+  [item.slug, item],
+  [`content/${folder}/${item.filename}`, item]
+]));
+const authorMap = collectionMap(authors, "authors");
+const categoryMap = collectionMap(categories, "categories");
 const base = cheerio.load(await readFile(indexPath, "utf8"), { decodeEntities: false });
 const sharedHeader = base("header.site-header").toString();
 const sharedFooter = base("footer.site-footer").toString();
@@ -59,17 +65,17 @@ const shell = ({ title, description, canonical, content }) => `<!DOCTYPE html><h
 
 const cards = posts.length ? posts.map((post) => {
   const cover = post.cover ? `<img src="${escapeHtml(publicPath(post.cover))}" alt="${escapeHtml(post.title)}">` : "";
-  const cats = (Array.isArray(post.categories) ? post.categories : [post.categories]).filter(Boolean);
-  return `<article class="post-card"><a class="post-card-media" href="yazilar/${post.slug}.html">${cover}</a><div class="post-card-body"><div class="post-meta">${escapeHtml(dateLabel(post.date))}${cats.length ? ` · ${escapeHtml(cats.join(", "))}` : ""}</div><h2><a href="yazilar/${post.slug}.html">${escapeHtml(post.title)}</a></h2><p>${escapeHtml(post.summary)}</p><a class="post-read-more" href="yazilar/${post.slug}.html">Yazıyı oku</a></div></article>`;
+  const cats = (Array.isArray(post.categories) ? post.categories : [post.categories]).map((ref) => categoryMap.get(ref)).filter(Boolean);
+  return `<article class="post-card"><a class="post-card-media" href="yazilar/${post.slug}.html">${cover}</a><div class="post-card-body"><div class="post-meta">${escapeHtml(dateLabel(post.date))}${cats.length ? ` · ${escapeHtml(cats.map((category) => category.name).join(", "))}` : ""}</div><h2><a href="yazilar/${post.slug}.html">${escapeHtml(post.title)}</a></h2><p>${escapeHtml(post.summary)}</p><a class="post-read-more" href="yazilar/${post.slug}.html">Yazıyı oku</a></div></article>`;
 }).join("\n") : `<div class="empty-state"><h2>Yeni yazılar hazırlanıyor.</h2><p>İçerikler yayımlandığında bu sayfada görüntülenecek.</p></div>`;
 await writeFile(path.join(out, "icerikler.html"), shell({ title: "Yazılar | Uzman Klinik Psikolog Serhat Tanrıverdi", description: "Psikoterapi, çocuk ve ergen terapisi ve H.Y.T® hakkında bilgilendirici yazılar.", canonical: "https://serhattanriverdi.com/icerikler.html", content: `<main class="content-main"><section class="content-hero"><div class="container"><p class="eyebrow">İçerikler</p><h1>Yazılar</h1><p>Psikoterapi ve ruh sağlığı üzerine bilgilendirici içerikler.</p></div></section><section class="section"><div class="container post-grid">${cards}</div></section></main>` }), "utf8");
 
 await mkdir(path.join(out, "yazilar"), { recursive: true });
 for (const post of posts) {
   const author = authorMap.get(post.author);
-  const cats = (Array.isArray(post.categories) ? post.categories : [post.categories]).filter((name) => categoryMap.has(name));
+  const cats = (Array.isArray(post.categories) ? post.categories : [post.categories]).map((ref) => categoryMap.get(ref)).filter(Boolean);
   const cover = post.cover ? `<figure class="article-cover"><img src="../${escapeHtml(publicPath(post.cover))}" alt="${escapeHtml(post.title)}"></figure>` : "";
-  const content = `<main class="content-main"><article class="article"><header class="article-header"><div class="container article-narrow"><p class="eyebrow">${escapeHtml(cats.join(" · ") || "Yazı")}</p><h1>${escapeHtml(post.title)}</h1><p class="article-summary">${escapeHtml(post.summary)}</p><div class="post-meta">${escapeHtml(dateLabel(post.date))}${author ? ` · ${escapeHtml(author.name)}, ${escapeHtml(author.title)}` : ""}</div></div></header><div class="container article-narrow">${cover}<div class="article-body">${marked.parse(post.body)}</div><a class="button secondary" href="../icerikler.html">Tüm yazılara dön</a></div></article></main>`;
+  const content = `<main class="content-main"><article class="article"><header class="article-header"><div class="container article-narrow"><p class="eyebrow">${escapeHtml(cats.map((category) => category.name).join(" · ") || "Yazı")}</p><h1>${escapeHtml(post.title)}</h1><p class="article-summary">${escapeHtml(post.summary)}</p><div class="post-meta">${escapeHtml(dateLabel(post.date))}${author ? ` · ${escapeHtml(author.name)}, ${escapeHtml(author.title)}` : ""}</div></div></header><div class="container article-narrow">${cover}<div class="article-body">${marked.parse(post.body)}</div><a class="button secondary" href="../icerikler.html">Tüm yazılara dön</a></div></article></main>`;
   const html = shell({ title: post.seo?.title || `${post.title} | Serhat Tanrıverdi`, description: post.seo?.description || post.summary, canonical: `https://serhattanriverdi.com/yazilar/${post.slug}.html`, content })
     .replaceAll('href="style.css', 'href="../style.css')
     .replaceAll('src="script.js', 'src="../script.js')
