@@ -81,7 +81,7 @@ const contentHeader = sharedHeader
   .replace('class="dropdown-toggle">İçerikler', 'class="dropdown-toggle active">İçerikler');
 const sharedFooter = base("footer.site-footer").toString();
 const sharedWhatsapp = base("a.whatsapp-float").toString();
-const shell = ({ title, description, canonical, content }) => `<!DOCTYPE html><html lang="tr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>${escapeHtml(title)}</title><meta name="description" content="${escapeHtml(description)}"><meta name="robots" content="index, follow"><link rel="canonical" href="${escapeHtml(canonical)}"><link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico"><link rel="stylesheet" href="style.css?v=84"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></head><body class="content-page">${contentHeader}${content}${sharedFooter}${sharedWhatsapp}<script src="script.js?v=28"></script></body></html>`;
+const shell = ({ title, description, canonical, content }) => `<!DOCTYPE html><html lang="tr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>${escapeHtml(title)}</title><meta name="description" content="${escapeHtml(description)}"><meta name="robots" content="index, follow"><link rel="canonical" href="${escapeHtml(canonical)}"><link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico"><link rel="stylesheet" href="style.css?v=85"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></head><body class="content-page">${contentHeader}${content}${sharedFooter}${sharedWhatsapp}<script src="script.js?v=28"></script></body></html>`;
 
 const cards = posts.length ? posts.map((post) => {
   const cover = post.cover ? `<img src="${escapeHtml(publicPath(post.cover))}" alt="${escapeHtml(post.title)}">` : "";
@@ -103,11 +103,11 @@ const contentHub = `<main class="content-main content-hub">
   <section class="section content-chooser-section">
     <div class="container">
       <div class="content-choice-grid">
-        <button class="content-choice" type="button" data-content-choice="yazilar" aria-expanded="false">
+        <button class="content-choice content-choice--articles" type="button" data-content-choice="yazilar" aria-expanded="false">
           <span class="content-choice-icon"><i class="fa-regular fa-pen-to-square"></i></span>
           <strong>Yazılar</strong>
         </button>
-        <button class="content-choice" type="button" data-content-choice="videolar" aria-expanded="false">
+        <button class="content-choice content-choice--videos" type="button" data-content-choice="videolar" aria-expanded="false">
           <span class="content-choice-icon"><i class="fa-solid fa-play"></i></span>
           <strong>Videolar</strong>
         </button>
