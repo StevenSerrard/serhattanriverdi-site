@@ -19,6 +19,4 @@ Depoya yazma yetkisi olmayan kişiler panelden içerik kaydedemez. Yalnızca siz
 
 ## Yayınlama
 
-Pages CMS'de kaydetme işlemi `main` dalına commit oluşturur. Bu commit `Siteyi yayımla` adlı GitHub Actions iş akışını otomatik başlatır. İş akışı tamamlandığında değişiklikler `serhattanriverdi.com` üzerinde görünür.
-
-GitHub deposunda **Settings → Pages → Build and deployment → Source** alanı bir kez **GitHub Actions** olarak seçilmelidir.
+Pages CMS'de kaydetme işlemi `main` dalına commit oluşturur. Bu commit `CMS içeriğini siteye uygula` adlı GitHub Actions iş akışını otomatik başlatır. İş akışı yazıları ve temel sayfa içeriklerini sitenin mevcut HTML yapısına uygular; ardından zaten etkin olan GitHub Pages yayını değişiklikleri `serhattanriverdi.com` üzerinde yayımlar.
