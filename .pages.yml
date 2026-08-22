@@ -41,7 +41,7 @@ content:
     filename: "{year}-{month}-{day}-{primary}.md"
     view:
       primary: title
-      fields: [date, published, author]
+      fields: [date, published]
       sort: date
       order: desc
       search: [title, summary, body]
@@ -70,15 +70,6 @@ content:
           path: posts
           extensions: [jpg, jpeg, png, webp]
           rename: safe
-      - name: author
-        label: Yazar
-        type: reference
-        required: true
-        options:
-          collection: authors
-          search: "name,title"
-          value: "{path}"
-          label: "{fields.name}"
       - name: categories
         label: Kategoriler
         type: reference
@@ -125,42 +116,6 @@ content:
         type: rich-text
         options:
           media: false
-
-  - name: authors
-    label: Yazarlar
-    type: collection
-    path: content/authors
-    format: yaml-frontmatter
-    filename: "{primary}.md"
-    view:
-      primary: name
-      search: [name, title, bio]
-    fields:
-      - name: name
-        label: Ad soyad
-        type: string
-        required: true
-      - name: title
-        label: Unvan
-        type: string
-        required: true
-      - name: photo
-        label: Profil görseli
-        type: image
-        options:
-          media: images
-          path: authors
-          extensions: [jpg, jpeg, png, webp]
-          rename: safe
-      - name: bio
-        label: Kısa biyografi
-        type: text
-      - name: body
-        label: Ayrıntılı biyografi
-        type: rich-text
-        options:
-          media: images
-          path: authors
 
   - name: homepage
     label: Ana sayfa içeriği
