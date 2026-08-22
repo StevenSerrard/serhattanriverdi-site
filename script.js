@@ -324,3 +324,45 @@ if (siteHeader) {
     servicesLink.classList.add("active");
   }
 })();
+
+// İçerikler sayfasındaki Yazılar / Videolar açılır alanları
+(() => {
+  const choices = document.querySelectorAll("[data-content-choice]");
+  const panels = document.querySelectorAll("[data-content-panel]");
+
+  if (!choices.length || !panels.length) return;
+
+  const openPanel = (name, shouldScroll = true) => {
+    choices.forEach((choice) => {
+      const active = choice.dataset.contentChoice === name;
+      choice.classList.toggle("is-active", active);
+      choice.setAttribute("aria-expanded", String(active));
+    });
+
+    panels.forEach((panel) => {
+      panel.hidden = panel.id !== name;
+    });
+
+    const panel = document.getElementById(name);
+    if (panel && shouldScroll) {
+      window.setTimeout(() => panel.scrollIntoView({ behavior: "smooth", block: "start" }), 80);
+    }
+
+    if (name === "videolar" && window.instgrm?.Embeds) {
+      window.instgrm.Embeds.process();
+    }
+  };
+
+  choices.forEach((choice) => {
+    choice.addEventListener("click", () => {
+      const name = choice.dataset.contentChoice;
+      history.replaceState(null, "", `#${name}`);
+      openPanel(name);
+    });
+  });
+
+  const initialPanel = window.location.hash.replace("#", "");
+  if (initialPanel === "yazilar" || initialPanel === "videolar") {
+    openPanel(initialPanel, false);
+  }
+})();
