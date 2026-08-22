@@ -50,7 +50,7 @@ const readCollection = async (folder) => Promise.all((await readdir(path.join(ro
   const parsed = matter(await readFile(path.join(root, "content", folder, filename), "utf8"));
   return { filename, slug: slugFromFilename(filename), ...parsed.data, body: parsed.content };
 }));
-const [postsRaw, authors, categories] = await Promise.all([readCollection("posts"), readCollection("authors"), readCollection("categories")]);
+const [postsRaw, categories] = await Promise.all([readCollection("posts"), readCollection("categories")]);
 const posts = postsRaw.filter((post) => post.published).sort((a, b) => new Date(b.date) - new Date(a.date));
 const collectionMap = (items, folder) => new Map(items.flatMap((item) => [
   [item.name, item],
@@ -58,7 +58,6 @@ const collectionMap = (items, folder) => new Map(items.flatMap((item) => [
   [item.slug, item],
   [`content/${folder}/${item.filename}`, item]
 ]));
-const authorMap = collectionMap(authors, "authors");
 const categoryMap = collectionMap(categories, "categories");
 
 const latestPosts = posts.slice(0, 3);
@@ -104,35 +103,27 @@ const contentHub = `<main class="content-main content-hub">
   <section class="section content-chooser-section">
     <div class="container">
       <div class="content-choice-grid">
-        <button class="content-choice" type="button" data-content-choice="yazilar" aria-expanded="false">
+        <a class="content-choice" href="yazilar.html">
           <span class="content-choice-icon"><i class="fa-regular fa-pen-to-square"></i></span>
           <strong>Yazılar</strong>
-        </button>
-        <button class="content-choice" type="button" data-content-choice="videolar" aria-expanded="false">
+        </a>
+        <a class="content-choice" href="videolar.html">
           <span class="content-choice-icon"><i class="fa-solid fa-play"></i></span>
           <strong>Videolar</strong>
-        </button>
+        </a>
       </div>
-      <section class="content-expand-panel" id="yazilar" data-content-panel hidden>
-        <div class="content-panel-heading"><p class="eyebrow">İçerikler</p><h2>Yazılar</h2></div>
-        <div class="post-grid">${cards}</div>
-      </section>
-      <section class="content-expand-panel" id="videolar" data-content-panel hidden>
-        <div class="content-panel-heading"><p class="eyebrow">İçerikler</p><h2>Videolar</h2></div>
-        <div class="content-video-grid">${videos}</div>
-        <div class="content-video-action"><a class="button secondary" href="https://www.instagram.com/psk.tanriverdi/" target="_blank" rel="noopener noreferrer">Tüm Videolar</a></div>
-      </section>
     </div>
   </section>
-</main><script async src="https://www.instagram.com/embed.js"></script>`;
+</main>`;
 await writeFile(path.join(out, "icerikler.html"), shell({ title: "İçerikler | Uzman Klinik Psikolog Serhat Tanrıverdi", description: "Psikoterapi, ruh sağlığı ve psikoloji üzerine yazılar ve videolar.", canonical: "https://serhattanriverdi.com/icerikler.html", content: contentHub }), "utf8");
+await writeFile(path.join(out, "yazilar.html"), shell({ title: "Yazılar | Uzman Klinik Psikolog Serhat Tanrıverdi", description: "Psikoterapi, ruh sağlığı ve psikoloji üzerine bilgilendirici yazılar.", canonical: "https://serhattanriverdi.com/yazilar.html", content: `<main class="content-main"><section class="content-hero"><div class="container"><p class="eyebrow">İçerikler</p><h1>Yazılar</h1></div></section><section class="section"><div class="container post-grid">${cards}</div></section></main>` }), "utf8");
+await writeFile(path.join(out, "videolar.html"), shell({ title: "Videolar | Uzman Klinik Psikolog Serhat Tanrıverdi", description: "Psikoloji ve psikoterapi üzerine bilgilendirici videolar.", canonical: "https://serhattanriverdi.com/videolar.html", content: `<main class="content-main"><section class="content-hero"><div class="container"><p class="eyebrow">İçerikler</p><h1>Videolar</h1></div></section><section class="section"><div class="container"><div class="content-video-grid">${videos}</div><div class="content-video-action"><a class="button secondary" href="https://www.instagram.com/psk.tanriverdi/" target="_blank" rel="noopener noreferrer">Instagram'da Tüm Videolar</a></div></div></section></main><script async src="https://www.instagram.com/embed.js"></script>` }), "utf8");
 
 await mkdir(path.join(out, "yazilar"), { recursive: true });
 for (const post of posts) {
-  const author = authorMap.get(post.author);
   const cats = (Array.isArray(post.categories) ? post.categories : [post.categories]).map((ref) => categoryMap.get(ref)).filter(Boolean);
   const cover = post.cover ? `<figure class="article-cover"><img src="../${escapeHtml(publicPath(post.cover))}" alt="${escapeHtml(post.title)}"></figure>` : "";
-  const content = `<main class="content-main"><article class="article"><header class="article-header"><div class="container article-narrow"><p class="eyebrow">${escapeHtml(cats.map((category) => category.name).join(" · ") || "Yazı")}</p><h1>${escapeHtml(post.title)}</h1><p class="article-summary">${escapeHtml(post.summary)}</p><div class="post-meta">${escapeHtml(dateLabel(post.date))}${author ? ` · ${escapeHtml(author.name)}, ${escapeHtml(author.title)}` : ""}</div></div></header><div class="container article-narrow">${cover}<div class="article-body">${marked.parse(post.body)}</div><a class="button secondary" href="../icerikler.html">Tüm yazılara dön</a></div></article></main>`;
+  const content = `<main class="content-main"><article class="article"><header class="article-header"><div class="container article-narrow"><p class="eyebrow">${escapeHtml(cats.map((category) => category.name).join(" · ") || "Yazı")}</p><h1>${escapeHtml(post.title)}</h1><p class="article-summary">${escapeHtml(post.summary)}</p><div class="post-meta">${escapeHtml(dateLabel(post.date))} · ${escapeHtml(home.about.name)}, ${escapeHtml(home.about.title)}</div></div></header><div class="container article-narrow">${cover}<div class="article-body">${marked.parse(post.body)}</div><a class="button secondary" href="../yazilar.html">Tüm yazılara dön</a></div></article></main>`;
   const html = shell({ title: post.seo?.title || `${post.title} | Serhat Tanrıverdi`, description: post.seo?.description || post.summary, canonical: `https://serhattanriverdi.com/yazilar/${post.slug}.html`, content })
     .replaceAll('href="style.css', 'href="../style.css')
     .replaceAll('src="script.js', 'src="../script.js')
@@ -143,6 +134,8 @@ for (const post of posts) {
     .replaceAll('href="cocuk-ergen-terapisi.html', 'href="../cocuk-ergen-terapisi.html')
     .replaceAll('href="yetiskin-terapisi.html', 'href="../yetiskin-terapisi.html')
     .replaceAll('href="hyt.html', 'href="../hyt.html')
+    .replaceAll('href="yazilar.html', 'href="../yazilar.html')
+    .replaceAll('href="videolar.html', 'href="../videolar.html')
     .replaceAll('href="icerikler.html', 'href="../icerikler.html');
   await writeFile(path.join(out, "yazilar", `${post.slug}.html`), html, "utf8");
 }
@@ -150,6 +143,8 @@ for (const post of posts) {
 const sitemapPath = path.join(out, "sitemap.xml");
 const sitemapEntries = [
   "https://serhattanriverdi.com/icerikler.html",
+  "https://serhattanriverdi.com/yazilar.html",
+  "https://serhattanriverdi.com/videolar.html",
   ...posts.map((post) => `https://serhattanriverdi.com/yazilar/${post.slug}.html`)
 ].map((url) => `  <url><loc>${escapeHtml(url)}</loc></url>`).join("\n");
 const sitemap = await readFile(sitemapPath, "utf8");
