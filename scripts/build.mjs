@@ -60,7 +60,7 @@ const base = cheerio.load(await readFile(indexPath, "utf8"), { decodeEntities: f
 const sharedHeader = base("header.site-header").toString();
 const contentHeader = sharedHeader
   .replaceAll('href="#', 'href="index.html#')
-  .replace('href="icerikler.html"', 'href="icerikler.html" class="active"');
+  .replace('class="dropdown-toggle">İçerikler', 'class="dropdown-toggle active">İçerikler');
 const sharedFooter = base("footer.site-footer").toString();
 const sharedWhatsapp = base("a.whatsapp-float").toString();
 const shell = ({ title, description, canonical, content }) => `<!DOCTYPE html><html lang="tr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>${escapeHtml(title)}</title><meta name="description" content="${escapeHtml(description)}"><meta name="robots" content="index, follow"><link rel="canonical" href="${escapeHtml(canonical)}"><link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico"><link rel="stylesheet" href="style.css?v=78"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></head><body class="content-page">${contentHeader}${content}${sharedFooter}${sharedWhatsapp}<script src="script.js?v=25"></script></body></html>`;
