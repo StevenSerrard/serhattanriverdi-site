@@ -153,27 +153,29 @@ a { color: inherit; text-decoration: none; }
 
 .contents-subheading a { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; color: #8a6b49; }
 
-.home-posts-grid, .reels-grid { display: grid; grid-template-columns: 1fr; gap: 18px; width: 100%; }
+.home-posts-grid, .reels-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; width: 100%; }
 
-.home-post-card { min-height: 238px; display: grid; grid-template-columns: minmax(150px, 40%) 1fr; overflow: hidden; border: 1px solid rgba(184, 155, 114, 0.18); border-radius: 24px; background: rgba(255, 255, 255, 0.72); box-shadow: rgba(58, 58, 58, 0.055) 0 18px 44px; transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s; }
+.home-post-card { min-height: 0; aspect-ratio: 9 / 16; display: flex; flex-direction: column; overflow: hidden; border: 1px solid rgba(184, 155, 114, 0.18); border-radius: 20px; background: rgba(255, 255, 255, 0.72); box-shadow: rgba(58, 58, 58, 0.055) 0 18px 44px; transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s; }
 
 .home-post-card:hover { transform: translateY(-4px); border-color: rgba(184, 155, 114, 0.35); box-shadow: rgba(47, 56, 66, 0.1) 0 26px 60px; }
 
-.home-post-media { min-height: 100%; background: var(--surface-soft); }
+.home-post-media { min-height: 0; flex: 0 0 39%; background: var(--surface-soft); }
 
 .home-post-media img { width: 100%; height: 100%; display: block; object-fit: cover; }
 
-.home-post-body { min-width: 0; padding: 24px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
+.home-post-body { min-width: 0; flex: 1; padding: 15px 14px; display: flex; flex-direction: column; align-items: flex-start; }
 
-.home-post-body h3 { margin: 10px 0; font-size: clamp(20px, 1.8vw, 25px); line-height: 1.2; }
+.home-post-body h3 { margin: 8px 0; font-size: clamp(16px, 1.35vw, 19px); line-height: 1.22; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 
-.home-post-body p { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.55; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.home-post-body p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 
-.home-post-body .post-read-more { margin-top: 14px; }
+.home-post-body .post-meta { font-size: 11px; line-height: 1.35; }
+
+.home-post-body .post-read-more { margin-top: auto; padding-top: 10px; font-size: 12px; }
 
 .contents-empty { min-height: 238px; padding: 28px; display: flex; align-items: center; border: 1px dashed var(--border); border-radius: 24px; color: var(--muted); }
 
-.reel-item { width: 100%; min-width: 0px; height: 238px; padding: 6px; border: 1px solid rgba(184, 155, 114, 0.18); border-radius: 24px; background: rgba(255, 255, 255, 0.62); box-shadow: rgba(58, 58, 58, 0.055) 0px 18px 44px; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s; }
+.reel-item { width: 100%; min-width: 0px; height: auto; aspect-ratio: 9 / 16; padding: 4px; border: 1px solid rgba(184, 155, 114, 0.18); border-radius: 20px; background: rgba(255, 255, 255, 0.62); box-shadow: rgba(58, 58, 58, 0.055) 0px 18px 44px; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s; }
 
 .reel-item:hover { transform: translateY(-4px); border-color: rgba(184, 155, 114, 0.35); box-shadow: rgba(47, 56, 66, 0.1) 0px 26px 60px; }
 
@@ -190,10 +192,11 @@ a { color: inherit; text-decoration: none; }
 }
 
 @media (max-width: 650px) {
-  .home-post-card { min-height: 0; grid-template-columns: 1fr; }
-  .home-post-media { min-height: 190px; aspect-ratio: 16 / 9; }
-  .home-post-body { padding: 22px; }
-  .reel-item { height: 238px; }
+  .home-posts-grid, .reels-grid { grid-template-columns: 1fr; gap: 20px; }
+  .home-post-card, .reel-item { width: min(100%, 360px); margin: 0 auto; }
+  .home-post-body { padding: 20px; }
+  .home-post-body h3 { font-size: 21px; }
+  .home-post-body p { font-size: 14px; }
   .reel-item iframe { clip-path: inset(0px 0px 100px); }
 }
 
