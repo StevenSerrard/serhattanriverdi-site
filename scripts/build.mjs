@@ -79,14 +79,50 @@ const contentHeader = sharedHeader
   .replace('class="dropdown-toggle">İçerikler', 'class="dropdown-toggle active">İçerikler');
 const sharedFooter = base("footer.site-footer").toString();
 const sharedWhatsapp = base("a.whatsapp-float").toString();
-const shell = ({ title, description, canonical, content }) => `<!DOCTYPE html><html lang="tr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>${escapeHtml(title)}</title><meta name="description" content="${escapeHtml(description)}"><meta name="robots" content="index, follow"><link rel="canonical" href="${escapeHtml(canonical)}"><link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico"><link rel="stylesheet" href="style.css?v=82"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></head><body class="content-page">${contentHeader}${content}${sharedFooter}${sharedWhatsapp}<script src="script.js?v=25"></script></body></html>`;
+const shell = ({ title, description, canonical, content }) => `<!DOCTYPE html><html lang="tr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>${escapeHtml(title)}</title><meta name="description" content="${escapeHtml(description)}"><meta name="robots" content="index, follow"><link rel="canonical" href="${escapeHtml(canonical)}"><link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico"><link rel="stylesheet" href="style.css?v=83"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></head><body class="content-page">${contentHeader}${content}${sharedFooter}${sharedWhatsapp}<script src="script.js?v=26"></script></body></html>`;
 
 const cards = posts.length ? posts.map((post) => {
   const cover = post.cover ? `<img src="${escapeHtml(publicPath(post.cover))}" alt="${escapeHtml(post.title)}">` : "";
   const cats = (Array.isArray(post.categories) ? post.categories : [post.categories]).map((ref) => categoryMap.get(ref)).filter(Boolean);
   return `<article class="post-card"><a class="post-card-media" href="yazilar/${post.slug}.html">${cover}</a><div class="post-card-body"><div class="post-meta">${escapeHtml(dateLabel(post.date))}${cats.length ? ` · ${escapeHtml(cats.map((category) => category.name).join(", "))}` : ""}</div><h2><a href="yazilar/${post.slug}.html">${escapeHtml(post.title)}</a></h2><p>${escapeHtml(post.summary)}</p><a class="post-read-more" href="yazilar/${post.slug}.html">Yazıyı oku</a></div></article>`;
 }).join("\n") : `<div class="empty-state"><h2>Yeni yazılar hazırlanıyor.</h2><p>İçerikler yayımlandığında bu sayfada görüntülenecek.</p></div>`;
-await writeFile(path.join(out, "icerikler.html"), shell({ title: "Yazılar | Uzman Klinik Psikolog Serhat Tanrıverdi", description: "Psikoterapi, çocuk ve ergen terapisi ve H.Y.T® hakkında bilgilendirici yazılar.", canonical: "https://serhattanriverdi.com/icerikler.html", content: `<main class="content-main"><section class="content-hero"><div class="container"><p class="eyebrow">İçerikler</p><h1>Yazılar</h1><p>Psikoterapi ve ruh sağlığı üzerine bilgilendirici içerikler.</p></div></section><section class="section"><div class="container post-grid">${cards}</div></section></main>` }), "utf8");
+const videos = [
+  "https://www.instagram.com/reel/Da-QjdRIHfJ/",
+  "https://www.instagram.com/reel/DXChNUljVMR/",
+  "https://www.instagram.com/reel/DR9I1JdCGgK/"
+].map((url) => `<div class="content-video-card"><blockquote class="instagram-media" data-instgrm-permalink="${url}" data-instgrm-version="14"></blockquote></div>`).join("\n");
+const contentHub = `<main class="content-main content-hub">
+  <section class="content-hero">
+    <div class="container">
+      <p class="eyebrow">İçerikler</p>
+      <h1>İçerikler</h1>
+    </div>
+  </section>
+  <section class="section content-chooser-section">
+    <div class="container">
+      <div class="content-choice-grid">
+        <button class="content-choice" type="button" data-content-choice="yazilar" aria-expanded="false">
+          <span class="content-choice-icon"><i class="fa-regular fa-pen-to-square"></i></span>
+          <strong>Yazılar</strong>
+        </button>
+        <button class="content-choice" type="button" data-content-choice="videolar" aria-expanded="false">
+          <span class="content-choice-icon"><i class="fa-solid fa-play"></i></span>
+          <strong>Videolar</strong>
+        </button>
+      </div>
+      <section class="content-expand-panel" id="yazilar" data-content-panel hidden>
+        <div class="content-panel-heading"><p class="eyebrow">İçerikler</p><h2>Yazılar</h2></div>
+        <div class="post-grid">${cards}</div>
+      </section>
+      <section class="content-expand-panel" id="videolar" data-content-panel hidden>
+        <div class="content-panel-heading"><p class="eyebrow">İçerikler</p><h2>Videolar</h2></div>
+        <div class="content-video-grid">${videos}</div>
+        <div class="content-video-action"><a class="button secondary" href="https://www.instagram.com/serhattanriverdi/" target="_blank" rel="noopener noreferrer">Tüm Videolar</a></div>
+      </section>
+    </div>
+  </section>
+</main><script async src="https://www.instagram.com/embed.js"></script>`;
+await writeFile(path.join(out, "icerikler.html"), shell({ title: "İçerikler | Uzman Klinik Psikolog Serhat Tanrıverdi", description: "Psikoterapi, ruh sağlığı ve psikoloji üzerine yazılar ve videolar.", canonical: "https://serhattanriverdi.com/icerikler.html", content: contentHub }), "utf8");
 
 await mkdir(path.join(out, "yazilar"), { recursive: true });
 for (const post of posts) {
