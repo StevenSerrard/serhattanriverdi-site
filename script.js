@@ -361,6 +361,17 @@ if (siteHeader) {
     });
   });
 
+  document
+    .querySelectorAll('.dropdown-menu a[href$="#yazilar"], .dropdown-menu a[href$="#videolar"]')
+    .forEach((link) => {
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+        const name = new URL(link.href, window.location.href).hash.replace("#", "");
+        history.replaceState(null, "", `#${name}`);
+        openPanel(name);
+      });
+    });
+
   const initialPanel = window.location.hash.replace("#", "");
   if (initialPanel === "yazilar" || initialPanel === "videolar") {
     openPanel(initialPanel, false);
