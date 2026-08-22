@@ -1,0 +1,280 @@
+media:
+  - name: images
+    label: Görseller
+    input: assets/images
+    output: /assets/images
+    categories: [image]
+    extensions: [jpg, jpeg, png, webp, gif, svg, ico]
+    rename: safe
+
+settings:
+  content:
+    merge: true
+  commit:
+    identity: user
+    templates:
+      create: "İçerik ekle: {path}"
+      update: "İçerik güncelle: {path}"
+      delete: "İçerik sil: {path}"
+      rename: "İçerik adını değiştir: {oldPath} -> {newPath}"
+
+components:
+  seo:
+    type: object
+    label: SEO
+    fields:
+      - name: title
+        label: Sayfa başlığı
+        type: string
+        required: true
+      - name: description
+        label: Meta açıklaması
+        type: text
+        required: true
+
+content:
+  - name: posts
+    label: Yazılar
+    type: collection
+    path: content/posts
+    format: yaml-frontmatter
+    filename: "{year}-{month}-{day}-{primary}.md"
+    view:
+      primary: title
+      fields: [date, published, author]
+      sort: date
+      order: desc
+      search: [title, summary, body]
+    fields:
+      - name: title
+        label: Başlık
+        type: string
+        required: true
+      - name: date
+        label: Yayın tarihi
+        type: date
+        required: true
+      - name: published
+        label: Yayında
+        type: boolean
+        required: true
+      - name: summary
+        label: Kısa açıklama
+        type: text
+        required: true
+      - name: cover
+        label: Kapak görseli
+        type: image
+        options:
+          media: images
+          path: posts
+          extensions: [jpg, jpeg, png, webp]
+          rename: safe
+      - name: author
+        label: Yazar
+        type: reference
+        required: true
+        options:
+          collection: authors
+          search: "name,title"
+          value: "{primary}"
+          label: "{primary}"
+      - name: categories
+        label: Kategoriler
+        type: reference
+        required: true
+        options:
+          collection: categories
+          multiple: true
+          min: 1
+          max: 5
+          search: "name,description"
+          value: "{primary}"
+          label: "{primary}"
+      - name: seo
+        component: seo
+      - name: body
+        label: Yazı
+        type: rich-text
+        required: true
+        options:
+          format: markdown
+          media: images
+          path: posts
+          rename: safe
+
+  - name: categories
+    label: Kategoriler
+    type: collection
+    path: content/categories
+    format: yaml-frontmatter
+    filename: "{primary}.md"
+    view:
+      primary: name
+      search: [name, description]
+    fields:
+      - name: name
+        label: Kategori adı
+        type: string
+        required: true
+      - name: description
+        label: Açıklama
+        type: text
+      - name: body
+        label: Notlar
+        type: rich-text
+        options:
+          media: false
+
+  - name: authors
+    label: Yazarlar
+    type: collection
+    path: content/authors
+    format: yaml-frontmatter
+    filename: "{primary}.md"
+    view:
+      primary: name
+      search: [name, title, bio]
+    fields:
+      - name: name
+        label: Ad soyad
+        type: string
+        required: true
+      - name: title
+        label: Unvan
+        type: string
+        required: true
+      - name: photo
+        label: Profil görseli
+        type: image
+        options:
+          media: images
+          path: authors
+          extensions: [jpg, jpeg, png, webp]
+          rename: safe
+      - name: bio
+        label: Kısa biyografi
+        type: text
+      - name: body
+        label: Ayrıntılı biyografi
+        type: rich-text
+        options:
+          media: images
+          path: authors
+
+  - name: homepage
+    label: Ana sayfa içeriği
+    type: file
+    path: content/site/home.json
+    format: json
+    fields:
+      - name: seo
+        component: seo
+      - name: hero
+        label: Giriş alanı
+        type: object
+        fields:
+          - name: eyebrow
+            label: Üst başlık
+            type: string
+            required: true
+          - name: title
+            label: Ana başlık
+            type: text
+            description: Satır sonları başlıkta korunur.
+            required: true
+          - name: intro
+            label: Giriş metni
+            type: text
+            required: true
+      - name: about
+        label: Hakkımda
+        type: object
+        fields:
+          - name: name
+            label: Ad soyad
+            type: string
+            required: true
+          - name: title
+            label: Unvan
+            type: string
+            required: true
+          - name: photo
+            label: Fotoğraf
+            type: image
+            required: true
+            options:
+              media: images
+          - name: paragraphs
+            label: Paragraflar
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "Paragraf {index}"
+            fields:
+              - name: text
+                label: Metin
+                type: text
+                required: true
+      - name: services
+        label: Hizmetler
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - name: title
+            label: Hizmet adı
+            type: string
+            required: true
+          - name: url
+            label: Bağlantı
+            type: string
+            required: true
+      - name: contact
+        label: İletişim alanı
+        type: object
+        fields:
+          - name: title
+            label: Başlık
+            type: string
+            required: true
+          - name: paragraphs
+            label: Açıklamalar
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "Metin {index}"
+            fields:
+              - name: text
+                label: Metin
+                type: text
+                required: true
+      - name: footer
+        label: Alt bilgi
+        type: object
+        fields:
+          - name: text
+            label: Tanıtım metni
+            type: text
+            required: true
+          - name: address
+            label: Adres
+            type: text
+            required: true
+          - name: phone
+            label: Telefon
+            type: string
+            required: true
+          - name: email
+            label: E-posta
+            type: string
+            required: true
+          - name: instagram
+            label: Instagram kullanıcı adı
+            type: string
+            required: true
+

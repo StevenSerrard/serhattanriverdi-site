@@ -1,0 +1,43 @@
+{
+  "seo": {
+    "title": "Uzman Klinik Psikolog Serhat TANRIVERDİ | Ankara Psikoterapi",
+    "description": "Uzman Klinik Psikolog Serhat Tanrıverdi. Yetişkin terapisi, çocuk ve ergen terapisi ve H.Y.T®; HipnoMeditatif Yeniden İşleme Terapisi hakkında bilgi ve randevu talebi."
+  },
+  "hero": {
+    "eyebrow": "Uzman Klinik Psikolog Serhat TANRIVERDİ",
+    "title": "Kendinizi anlamaya doğru\ngüvenli bir alan.",
+    "intro": "Bu süreçte amaç yalnızca mevcut güçlüklerin ortadan kalkması değil; kişinin kendi deneyimini daha derin bir biçimde anlamlandırabilmesidir."
+  },
+  "about": {
+    "name": "Serhat TANRIVERDİ",
+    "title": "Uzman Klinik Psikolog",
+    "photo": "/IMG_4286.JPG",
+    "paragraphs": [
+      { "text": "Psikoloji lisans eğitimimi Fatih Sultan Mehmet Vakıf Üniversitesi’nde tamamladım. Klinik Psikoloji yüksek lisansımı yine aynı üniversitede tamamlayarak Uzman Klinik Psikolog unvanını aldım." },
+      { "text": "Mesleki deneyimim kapsamında Gençlik ve Spor Bakanlığı ile UNICEF iş birliğiyle yürütülen Sosyal Uyum Projesi’nde görev aldım ve Aile ve Sosyal Hizmetler Bakanlığı bünyesinde psikolog olarak çalıştım." },
+      { "text": "Psikoterapi alanında yetişkinlerle psikodinamik psikoterapi eğitimi aldım. Ayrıca çocuk ve ergenlerle çalışmaya yönelik Bilişsel Davranışçı Psikoterapi eğitimini tamamladım." },
+      { "text": "Mesleki çalışmalarımda, bireyin iç dünyasını, ilişkisel örüntülerini ve duygusal süreçlerini anlamaya odaklanan bir yaklaşım benimserim. Terapi süreci; kişinin kendi deneyimini daha yakından tanımasına, tekrar eden yaşantılarını anlamlandırmasına ve içsel bir farkındalık geliştirmesine alan açar." },
+      { "text": "Çalışmalarımda etik ilkelere bağlılık, gizlilik ve profesyonel sınırlar temel alınır." }
+    ]
+  },
+  "services": [
+    { "title": "Çocuk / Ergen Terapisi", "url": "cocuk-ergen-terapisi.html" },
+    { "title": "Yetişkin Terapisi", "url": "yetiskin-terapisi.html" },
+    { "title": "H.Y.T®; HipnoMeditatif Yeniden İşleme Terapisi", "url": "hyt.html" }
+  ],
+  "contact": {
+    "title": "Randevu talebi oluşturun",
+    "paragraphs": [
+      { "text": "Randevu talebi veya süreç hakkında bilgi almak için formu doldurabilirsiniz. Mesajınız değerlendirildikten sonra size uygun bir zaman aralığında dönüş sağlanacaktır." },
+      { "text": "Bu form yalnızca ilk temas ve randevu talebi amacıyla kullanılmaktadır. Acil durumlar için uygun bir başvuru kanalı değildir." }
+    ]
+  },
+  "footer": {
+    "text": "Psikoterapi sürecinde etik çerçeve, güvenli çalışma alanı ve bireysel deneyime saygı temel alınır.",
+    "address": "Emrah Mah. Gn. Dr. Tevfik Sağlam Cad.\nKöşk Apt. 70/10\nKeçiören / ANKARA",
+    "phone": "0552 652 30 40",
+    "email": "psk.serhattanriverdi@gmail.com",
+    "instagram": "@psk.tanriverdi"
+  }
+}
+
