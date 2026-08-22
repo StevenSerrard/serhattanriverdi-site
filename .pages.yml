@@ -77,8 +77,8 @@ content:
         options:
           collection: authors
           search: "name,title"
-          value: "{primary}"
-          label: "{primary}"
+          value: "{path}"
+          label: "{fields.name}"
       - name: categories
         label: Kategoriler
         type: reference
@@ -89,8 +89,8 @@ content:
           min: 1
           max: 5
           search: "name,description"
-          value: "{primary}"
-          label: "{primary}"
+          value: "{path}"
+          label: "{fields.name}"
       - name: seo
         component: seo
       - name: body
@@ -277,4 +277,3 @@ content:
             label: Instagram kullanıcı adı
             type: string
             required: true
-
