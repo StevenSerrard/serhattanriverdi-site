@@ -365,4 +365,11 @@ if (siteHeader) {
   if (initialPanel === "yazilar" || initialPanel === "videolar") {
     openPanel(initialPanel, false);
   }
+
+  window.addEventListener("hashchange", () => {
+    const requestedPanel = window.location.hash.replace("#", "");
+    if (requestedPanel === "yazilar" || requestedPanel === "videolar") {
+      openPanel(requestedPanel);
+    }
+  });
 })();
