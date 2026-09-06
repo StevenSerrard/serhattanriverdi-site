@@ -133,13 +133,13 @@ a { color: inherit; text-decoration: none; }
 
 .service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 44px; align-items: stretch; }
 
-.service-card { position: relative; isolation: isolate; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; min-height: 290px; padding: 34px; border: 1px solid rgba(184, 155, 114, 0.26); border-radius: 28px; background-color: #4b4139; background-position: center; background-repeat: no-repeat; background-size: cover; box-shadow: rgba(58, 58, 58, 0.09) 0px 18px 44px; cursor: pointer; transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s; }
+.service-card { position: relative; isolation: isolate; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; aspect-ratio: 4 / 3; min-height: 0; padding: 34px; border: 1px solid rgba(184, 155, 114, 0.26); border-radius: 28px; background-color: #4b4139; background-position: center; background-repeat: no-repeat; background-size: cover; box-shadow: rgba(58, 58, 58, 0.09) 0px 18px 44px; cursor: pointer; transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s; }
 
 .service-card::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(24, 20, 17, 0.14) 12%, rgba(24, 20, 17, 0.40) 52%, rgba(24, 20, 17, 0.88) 100%); transition: background 0.25s ease; }
 
 .service-card-child { background-image: url("assets/images/service-child-adolescent-therapy-v5.png"); background-position: center 46%; }
 
-.service-card-adult { background-image: url("assets/images/service-adult-therapy-final.png"); background-position: center 58%; }
+.service-card-adult { background-image: url("assets/images/service-adult-therapy-card-v2.png"); background-position: center; }
 
 .service-card-hyt { background-image: url("assets/images/service-hyt-v3.png"); background-position: center 46%; }
 
@@ -340,7 +340,6 @@ textarea { resize: vertical; }
   .split-grid, .contact-grid, .hyt-layout { grid-template-columns: 1fr; gap: 38px; }
   .service-grid, .form-row { grid-template-columns: 1fr; }
 
-  .service-card { min-height: clamp(280px, 70vw, 460px); }
   .hyt-menu { position: static; }
   .hyt-content, .service-detail { padding: 30px; }
 }
