@@ -32,6 +32,7 @@ $(".about-title .name").text(home.about.name);
 $(".about-title .title").text(home.about.title);
 $(".about-photo img").attr("src", publicPath(home.about.photo)).attr("alt", `${home.about.title} ${home.about.name}`);
 $(".about .content-block").html(home.about.paragraphs.map(({ text }) => `<p>${escapeHtml(text)}</p>`).join("\n"));
+// Keep service artwork as real images so browsers render the complete 4:3 cards reliably.
 const serviceCardClasses = ["service-card-child", "service-card-adult", "service-card-hyt"];
 const serviceCardImages = [
   "assets/images/service-child-adolescent-therapy-v5.png",
