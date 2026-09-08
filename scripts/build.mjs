@@ -33,7 +33,12 @@ $(".about-title .title").text(home.about.title);
 $(".about-photo img").attr("src", publicPath(home.about.photo)).attr("alt", `${home.about.title} ${home.about.name}`);
 $(".about .content-block").html(home.about.paragraphs.map(({ text }) => `<p>${escapeHtml(text)}</p>`).join("\n"));
 const serviceCardClasses = ["service-card-child", "service-card-adult", "service-card-hyt"];
-$(".service-grid").html(home.services.map((service, index) => `<a class="service-card ${serviceCardClasses[index] || ""}" href="${escapeHtml(service.url)}"><h3>${escapeHtml(service.title)}</h3><p>Bilgi için tıklayın</p></a>`).join("\n"));
+const serviceCardImages = [
+  "assets/images/service-child-adolescent-therapy-v5.png",
+  "assets/images/service-adult-therapy-card-v2.png",
+  "assets/images/service-hyt-v3.png"
+];
+$(".service-grid").html(home.services.map((service, index) => `<a class="service-card ${serviceCardClasses[index] || ""}" href="${escapeHtml(service.url)}"><img class="service-card-image" src="${serviceCardImages[index] || ""}" alt="${escapeHtml(service.title)}"><h3>${escapeHtml(service.title)}</h3><p>Bilgi için tıklayın</p></a>`).join("\n"));
 $(".contact-text-final h2").text(home.contact.title);
 $(".contact-note").html(home.contact.paragraphs.map(({ text }) => `<p>${escapeHtml(text)}</p>`).join("\n"));
 $(".footer-brand p").text(home.footer.text);
