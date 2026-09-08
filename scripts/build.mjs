@@ -162,3 +162,5 @@ const sitemapEntries = [
 const sitemap = await readFile(sitemapPath, "utf8");
 await writeFile(sitemapPath, sitemap.replace("</urlset>", `${sitemapEntries}\n</urlset>`), "utf8");
 console.log(`Build complete: ${posts.length} published post(s).`);
+
+// Hizmet karti gorsel katmani yayin tetigi.
