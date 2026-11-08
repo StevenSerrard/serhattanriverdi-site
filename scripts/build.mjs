@@ -96,6 +96,7 @@ const cards = posts.length ? posts.map((post) => {
   return `<article class="post-card"><a class="post-card-media" href="yazilar/${post.slug}.html">${cover}</a><div class="post-card-body"><div class="post-meta">${escapeHtml(dateLabel(post.date))}${cats.length ? ` · ${escapeHtml(cats.map((category) => category.name).join(", "))}` : ""}</div><h2><a href="yazilar/${post.slug}.html">${escapeHtml(post.title)}</a></h2><p>${escapeHtml(post.summary)}</p><a class="post-read-more" href="yazilar/${post.slug}.html">Yazıyı oku</a></div></article>`;
 }).join("\n") : `<div class="empty-state"><h2>Yeni yazılar hazırlanıyor.</h2><p>İçerikler yayımlandığında bu sayfada görüntülenecek.</p></div>`;
 const videos = [
+  "https://www.instagram.com/reel/De6UaXSorO8/",
   "https://www.instagram.com/reel/Da-QjdRIHfJ/",
   "https://www.instagram.com/reel/DXChNUljVMR/",
   "https://www.instagram.com/reel/DR9I1JdCGgK/"
